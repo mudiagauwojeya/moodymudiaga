@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+/* For mobile devices */
+
+body {
+    background-color: #333;
+    color: #333;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    max-width: 480px;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 0;
+}
+
+li > a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100px;
+}
+
+main,
+button {
+    background-color: gainsboro;
+}
+
+main,
+footer,
+.gallery {
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: 'Volkhov', serif;
+    font-size: 1.8rem;
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 20px 10px 10px 20px;
+}
+
+p,
+a {
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+button {
+    border-radius: 6px;
+    border-style: none;
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding: 7px;
+    width: 200px;
+}
+
+button > a {
+    color: #333;
+    text-decoration: none;
+}
+
+a,
+footer {
+    color: gainsboro;
+}
+
+footer {
+    bottom: 0;
+    font-size: 0.75rem;
+    position: relative;
+    text-align: center;
+}
+
+footer > p {
+    padding: 0;
+}
+
+.logo {
+    padding: 50px 0 5px 20px;
+    width: 120px;
+}
+
+ul,
+.gallery {
+    padding-left: 20px;
+}
+
+.img {
+    border: 1px solid #333;
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.img:hover {
+    border: 1px solid gainsboro;
+}
+
+.portfolio-img {
+    height: 250px;
+    width: 300px;
+}
+
+.description {
+    color: gainsboro;
+    padding: 5px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+#cta-button {
+    margin: 40px auto;
+    width: 200px;
+}
+
+/* For tablets */
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+
+   body {
+       height: auto;
+       max-width: 800px;
+   }
+   
+   main,
+   footer,
+   .logo {
+       margin-top: 30px;
+   }
+
+   ul,
+   h1,
+   p,
+   .gallery,
+   .logo {
+       padding-left: 60px;
+       padding-right: 50px;
+   }
+
+   h1 {
+       font-size: 2.8rem;
+   }
+
+   p {
+       font-size: 1.1rem;
+   }
+
+   button {
+       font-size: 25px;
+       width: 300px;
+   }
+
+   footer {
+       bottom: 0;
+       font-size: 0.75rem;
+       position: relative;
+       text-align: center;
+   }
+
+   footer > p {
+       font-size: 0.8rem;
+       padding: 0;
+   }
+
+   #cta-button {
+       margin: 50px auto;
+       width: 300px;
+   }
+}
+
+/* For Laptops and Desktops */
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        height: auto;
+        margin: 0 auto;
+        max-width: 1440px;
+     }
+
+    main,
+    footer,
+    .logo {
+        margin-top: 50px;
+    }
+
+    ul,
+    h1,
+    p,
+    .logo,
+    .gallery {
+        padding-left: 60px;
+        padding-right: 50px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    button:hover {
+        background-color: #222;
+    }
+
+    footer {
+        bottom: 0;
+        font-size: 0.75rem;
+        position: relative;
+        text-align: center;
+    }
+
+    footer > p {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    #cta-button {
+        margin: 50px auto;
+        width: 300px;
+    }
+}

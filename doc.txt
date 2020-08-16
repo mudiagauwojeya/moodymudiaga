@@ -1,0 +1,18 @@
+<a class="mycontact" href="https://twitter.com/MoodyMudiaga">
+            <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        <a class="mycontact" href="https://www.linkedin.com/in/mudiaga-moody-uwojeya/">
+            <span class="fa-stack centered">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+
+            https://web.facebook.com/moody.mudiaga
+
+
+            https://moody2times.github.io/-four-card/
+
+            https://moody2times.github.io/RWD/

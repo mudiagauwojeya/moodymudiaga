@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch sass/main.scss -o css/",
+    "server": "live-server",
+    "start": "npm-run-all --parallel watch server",
+
+    "compress": "node-sass css/main.css css/style.min.css --output-style compressed"
+  },
+  "author": "Moody Mudiaga",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.1.0"
+  }
+}

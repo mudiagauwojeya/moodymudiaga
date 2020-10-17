@@ -4,6 +4,7 @@
                 <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
             </span>
         </a>
+
         <a class="mycontact" href="https://www.linkedin.com/in/mudiaga-moody-uwojeya/">
             <span class="fa-stack centered">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -15,4 +16,30 @@
 
             https://moody2times.github.io/-four-card/
 
-            https://moody2times.github.io/RWD/
+            https://moody2times.github.io/RWD/ 
+
+
+    font-family: 'Quicksand', sans-serif;
+
+     <nav>
+        <div class="logo">
+            <a href="http://moodymudiaga.com">
+            <img src="images/mudi-logo-xs-black.png" alt="mudi-logo">
+            </a>
+        </div>
+        <ul>
+            <li><a href="http://moodymudiaga.com">Home</a></li>
+            <li><a href="http://moodymudiaga.com/blog">Blog</a></li>
+            <li><a href="http://moodymudiaga.com/portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+    
+ 
+                Full stack developer, enthusiastic about websites and apps
+                with <strong>elegant user interfaces and painless user
+                experience crafted with  code that follow best practices.</strong> 
+            
+                My tech stackinclude html5, css3, javascript,  reactjs, 
+                bootstrap, jQuery, php, nodejs, expressjs, mongoDB, mongoose, ejs, CLI, and version control
+                tech namely, git and Github. 
+      

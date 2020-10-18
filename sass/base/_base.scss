@@ -7,10 +7,20 @@
 }
 
 :root {
-    color: $rich-black-fogra-39;
+    color: $cultured;
     font-size: 62.5%;
-    font-weight: 200;
-    line-height: 1.5;
     --text: 'Commissioner', sans-serif;
     --heading: 'Petrona', serif;
+}
+
+body {
+    font-family: var(--text);
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60vh repeat(2, minmax(min-content, 1fr));
 }

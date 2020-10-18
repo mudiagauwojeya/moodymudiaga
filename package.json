@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node-sass --watch sass/main.scss -o css/",
+    "watch": "node-sass --watch sass/style.scss -o css/",
     "server": "live-server",
     "start": "npm-run-all --parallel watch server",
 
-    "compress": "node-sass css/main.css css/style.min.css --output-style compressed"
+    "prefix": "postcss --use autoprefixer -b 'last versions' css/style.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
+    "build": "npm-run-all prefix compress"
   },
   "author": "Moody Mudiaga",
   "license": "ISC",
@@ -18,6 +20,7 @@
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.0",
     "postcss-cli": "^8.1.0"
   }
 }

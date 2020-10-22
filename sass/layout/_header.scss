@@ -1,4 +1,21 @@
 .header {
     background-color: $burgundy;
-    padding: 5rem 3rem 0;
+    padding: 2.35rem 4rem 0;
+
+    &__brand {
+        display: inline-block;
+        width: 33.3333333%;
+    }
+
+    &__logo {
+        width: 100%;
+    }
+
+    &__content {
+        margin-top: 6rem;
+    }
+
+    &__paragraph {
+        margin-top: 2rem;
+    }
 }

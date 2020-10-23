@@ -1,0 +1,26 @@
+.feature {
+    background-color: $light-gray;
+    color: $red-dark-secondary;
+    padding: 6rem 4rem;
+
+    &__shape {
+        background-color: $cultured;
+        box-shadow: 0 .5rem 1rem rgba($eerie-black, .3);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        height: 25rem;
+        margin: 0 auto;
+        width: 25rem;
+
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__description {
+        text-align: center;
+
+        &:not(:last-of-type) {
+            margin-bottom: 4rem;
+        }
+    }
+}

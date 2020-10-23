@@ -8,10 +8,10 @@
 
     &__button {
         background-color: $cultured;
-        box-shadow: 0 .5rem 1.5rem rgba($red-light, .5);
+        box-shadow: 0 .5rem 1.5rem rgba($light-gray, .5);
         border-radius: 50%;
         position: fixed;
-        top: .8rem;
+        top: 1.2rem;
         right: 1rem;
         width: 5rem;
         height: 5rem;
@@ -24,7 +24,7 @@
         height: 5rem;
         width: 5rem;
         position: fixed;
-        top: .8rem;
+        top: 1.2rem;
         right: 1rem;
         transition: transform .3s ease-out;
    }
@@ -36,8 +36,9 @@
     }
 
     &__list {
-        font-size: 1.8rem;
+        font-size: 2rem;
         list-style-type: none;
+        margin-top: 5rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -46,17 +47,17 @@
     }
 
     &__item {
-        padding: 1.5rem;
+        padding: 2rem;
     }
 
     &__link {
-        &:link,
-        &:visited {
-            color: $light-gray;
+        &:link {
+            color: $white;
             text-decoration: none;
         }
 
-        &:active {
+        &:active,
+        &:visited {
             color: $silver-chalice;
         }
     }
@@ -119,6 +120,13 @@
         top: 0;
         left: 0;
         transform: rotate(135deg);
+    }
+
+    &__icons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 

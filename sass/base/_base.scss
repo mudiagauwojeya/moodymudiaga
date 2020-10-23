@@ -15,12 +15,12 @@
 
 body {
     font-family: var(--text);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 200;
     line-height: 1.5;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 60vh repeat(2, minmax(min-content, 1fr));
+    grid-template-rows: 70vh repeat(2, minmax(min-content, max-content));
 }

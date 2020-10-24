@@ -1,3 +1,46 @@
 .footer {
     background-color: $persian-plum;
+    color: $silver-chalice;
+    padding: 6rem 4rem 0;
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        padding: 1.3rem 0;
+
+        &:last-of-type {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__link {
+        &:link {
+            color: $cultured;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &:visited,
+        &:active {
+            color: $silver-chalice;
+        }
+    }
+
+    &__attribution {
+        padding: 1.3rem 0;
+
+        &:first-of-type {
+            margin-top: 3rem;
+        }
+    }
+
+    &__copyright {
+        font-size: 1.35rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
 }

@@ -77,7 +77,9 @@ body {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     height: 25rem;
     margin: 0 auto;
-    width: 25rem; }
+    width: 25rem;
+    position: relative;
+    z-index: 0; }
     .feature__shape:not(:last-of-type) {
       margin-bottom: 2rem; }
   .feature__description {
@@ -87,7 +89,8 @@ body {
 
 .navigation {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   .navigation__checkbox {
     display: none; }
   .navigation__button {
@@ -123,6 +126,8 @@ body {
     transform: translate(-50%, 20%);
     transition: transform .4s ease-out 1s; }
   .navigation__item {
+    font-weight: 600;
+    letter-spacing: .3rem;
     padding: 2rem; }
   .navigation__link:link {
     color: #ffffffff;
@@ -164,8 +169,23 @@ body {
     top: 0;
     left: 0;
     transform: rotate(135deg); }
-  .navigation__icons {
+  .navigation__socials {
+    list-style-type: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    top: 50rem;
+    left: 5rem; }
+  .navigation hr {
+    color: #b1a7a6ff; }
+  .navigation__social-text {
+    color: #f5f3f4ff;
+    padding: 2rem 0;
+    text-align: center; }
+  .navigation__social-icon {
+    display: inline-block;
+    padding: 1rem 2.3rem; }
+  .navigation__social-link:link, .navigation__social-link:active, .navigation__social-link:visited {
+    text-decoration: none; }
+  .navigation__social-brand {
+    fill: #b1a7a6ff;
+    height: 2rem;
+    width: 2rem; }

@@ -1,6 +1,7 @@
-.navigation {  
+.navigation {
     position: fixed;
     width: 100%;
+    z-index: 100;
 
     &__checkbox {
         display: none;
@@ -17,7 +18,7 @@
         height: 5rem;
         z-index: 50;
     }
-    
+
     &__ball {
         background-image: radial-gradient($red-dark-secondary, $red-dark);
         border-radius: 50%;
@@ -27,7 +28,7 @@
         top: 1.2rem;
         right: 1rem;
         transition: transform .3s ease-out;
-   }
+    }
 
     &__menu {
         opacity: 0;
@@ -47,6 +48,8 @@
     }
 
     &__item {
+        font-weight: 600;
+        letter-spacing: .3rem;
         padding: 2rem;
     }
 
@@ -63,6 +66,7 @@
     }
 
     &__icon {
+
         &,
         &::after,
         &::before {
@@ -96,38 +100,66 @@
 
     //navigation button onclick behaviour
 
-    &__checkbox:checked ~ &__ball {
+    &__checkbox:checked~&__ball {
         transform: scale(50);
     }
 
-    &__checkbox:checked ~ &__menu {
+    &__checkbox:checked~&__menu {
         opacity: 1;
         width: 100%;
         z-index: 100;
     }
 
-    &__checkbox:checked + &__button &__icon {
+    &__checkbox:checked+&__button &__icon {
         background-color: transparent;
     }
 
-    &__checkbox:checked + &__button &__icon:before {
+    &__checkbox:checked+&__button &__icon:before {
         top: 0;
         left: 0;
         transform: rotate(-135deg);
     }
 
-    &__checkbox:checked + &__button &__icon:after {
+    &__checkbox:checked+&__button &__icon:after {
         top: 0;
         left: 0;
         transform: rotate(135deg);
     }
 
-    &__icons {
+    &__socials {
+        list-style-type: none;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 50rem;
+        left: 5rem;
     }
 
+    hr {
+        color: $silver-chalice;
+    }
 
+    &__social-text {
+        color: $cultured;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    &__social-icon {
+        display: inline-block;
+        padding: 1rem 2.3rem;
+    }
+
+    &__social-link {
+
+        &:link,
+        &:active,
+        &:visited {
+            text-decoration: none;
+        }
+    }
+
+    &__social-brand {
+        fill: $silver-chalice;
+        height: 2rem;
+        width: 2rem;
+    }
 }

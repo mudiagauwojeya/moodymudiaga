@@ -14,6 +14,7 @@
 }
 
 body {
+    background-color: $red-light;
     font-family: var(--text);
     font-size: 1.7rem;
     font-weight: 200;
@@ -22,5 +23,5 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 70vh repeat(2, minmax(min-content, max-content));
+    grid-template-rows: 70vh repeat(4, minmax(min-content, max-content));
 }

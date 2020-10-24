@@ -133,12 +133,12 @@
         left: 5rem;
     }
 
-    hr {
+    hr,
+    &__social-text {
         color: $silver-chalice;
     }
 
     &__social-text {
-        color: $cultured;
         padding: 2rem 0;
         text-align: center;
     }

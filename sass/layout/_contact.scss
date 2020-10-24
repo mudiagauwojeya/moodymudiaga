@@ -1,0 +1,63 @@
+.contact {
+    background-color: $light-gray;
+    clip-path: polygon(0 2%, 50% 5%, 100% 2%, 100% 97%, 50% 100%, 0 97%);
+    padding: 6rem 2.5rem;
+
+    &__form {
+        background-color: $cultured;
+        border-radius: .3rem;
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 3rem 1.2rem;
+        position: relative;
+    }
+
+    &__label {
+        color: $blood-red;
+        display: inline-block;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    &__input {
+        background-color: $grey;
+        border: 1px solid $blood-red;
+        border-radius: .4rem;
+        display: block;
+        font-family: inherit;
+        margin-top: .4rem;
+        padding: .4rem 1.2rem;
+        width: 100%;
+    }
+
+    &__textarea {
+        background-color: $grey;
+        border: 1px solid $blood-red;
+        border-radius: .4rem;
+        display: inline-block;
+        font-family: inherit;
+        font-size: inherit;
+        padding: .4rem 1.2rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    &__button {
+        background-color: $red-dark-secondary;
+        border: none;
+        border-radius: 50rem;
+        color: $cultured;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.7rem;
+        padding: 1.3rem 2rem;
+        margin: 0 auto;
+        width: 70%;
+        
+        &:focus {
+            background-color: $red-dark;
+            outline: none;
+        }
+    }
+}

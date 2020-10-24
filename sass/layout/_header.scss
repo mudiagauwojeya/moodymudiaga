@@ -1,6 +1,7 @@
 .header {
     background-color: $burgundy;
-    padding: 2.8rem 4rem 4rem;
+    padding: 2.8rem 2.5rem 4rem;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 
     &__brand {
         display: inline-block;

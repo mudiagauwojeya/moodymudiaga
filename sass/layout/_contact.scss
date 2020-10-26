@@ -4,7 +4,7 @@
     padding: 6rem 2.5rem;
 
     &__form {
-        background-color: $cultured;
+        background-color: $red-light;
         border-radius: .3rem;
         display: block;
         font-size: 1.3rem;
@@ -40,7 +40,14 @@
         font-size: inherit;
         padding: .4rem 1.2rem;
         margin-bottom: 1.5rem;
+        margin-top: .4rem;
         width: 100%;
+    }
+
+    &__input:focus,
+    &__textarea:focus {
+        background-color: $light-gray;
+        outline: none;
     }
 
     &__button {

@@ -23,7 +23,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 70vh repeat(4, minmax(min-content, max-content)); }
+  grid-template-rows: 80vh repeat(4, minmax(min-content, max-content)); }
 
 .heading-primary {
   color: #b1a7a6ff;
@@ -55,7 +55,7 @@ body {
   clip-path: polygon(0 2%, 50% 5%, 100% 2%, 100% 97%, 50% 100%, 0 97%);
   padding: 6rem 2.5rem; }
   .contact__form {
-    background-color: #f5f3f4ff;
+    background-color: #eb8f8f;
     border-radius: .3rem;
     display: block;
     font-size: 1.3rem;
@@ -85,7 +85,11 @@ body {
     font-size: inherit;
     padding: .4rem 1.2rem;
     margin-bottom: 1.5rem;
+    margin-top: .4rem;
     width: 100%; }
+  .contact__input:focus, .contact__textarea:focus {
+    background-color: #d3d3d3ff;
+    outline: none; }
   .contact__button {
     background-color: #810000;
     border: none;

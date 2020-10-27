@@ -1,5 +1,6 @@
-/* SCSS COLOR */
-/* SCSS HEX */
+/* light shades */
+/* red shades */
+/* black shades */
 /* SCSS HEX */
 *,
 *::after,
@@ -44,7 +45,7 @@ body {
   margin-bottom: 3rem; }
 
 .gallery {
-  background-color: #a4161aff;
+  background-color: #641220ff;
   display: grid;
   width: 60vw;
   height: 40vh; }
@@ -59,12 +60,12 @@ body {
     background-color: #eb8f8f;
     border-radius: .3rem;
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
     padding: 3rem 1.2rem;
     position: relative; }
   .contact__label {
-    color: #660708ff;
+    color: #ffffffff;
     display: inline-block;
     padding: 1rem 0;
     width: 100%; }
@@ -119,13 +120,35 @@ body {
     margin: 0 auto;
     width: 20rem;
     position: relative;
-    z-index: 0; }
+    text-align: center;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .feature__shape:not(:last-of-type) {
       margin-bottom: 2rem; }
+  .feature__item {
+    fill: #da1e37ff;
+    height: 10rem;
+    width: 10rem; }
+  .feature__item--1 {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #b1a7a6ff;
+    height: 4rem;
+    width: 4rem; }
   .feature__description {
-    text-align: center; }
+    background-image: linear-gradient(145deg, rgba(218, 30, 55, 0.6), rgba(205, 10, 10, 0.9));
+    border-radius: .3rem;
+    text-align: center;
+    width: 100%; }
     .feature__description:not(:last-of-type) {
       margin-bottom: 4rem; }
+  .feature__highlight {
+    color: #ffffffff;
+    padding: 1rem .5rem; }
 
 .footer {
   background-color: #641220ff;
@@ -185,7 +208,8 @@ body {
     flex-direction: column; }
   .header__paragraph {
     color: #ffffffff;
-    margin: 2rem 0; }
+    font-size: 1.8rem;
+    margin: 2rem 0 4rem; }
   .header__chevron {
     fill: #b1a7a6ff;
     height: 9rem;
@@ -209,7 +233,7 @@ body {
     height: 5rem;
     z-index: 50; }
   .navigation__ball {
-    background-image: radial-gradient(#810000, #cd0a0a);
+    background-image: radial-gradient(#da1e37ff 45%, #eb8f8f 55%);
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
@@ -240,7 +264,7 @@ body {
   .navigation__link:active, .navigation__link:visited {
     color: #b1a7a6ff; }
   .navigation__icon, .navigation__icon::after, .navigation__icon::before {
-    background-color: #810000;
+    background-color: #da1e37ff;
     display: inline-block;
     height: 2px;
     width: 3rem;

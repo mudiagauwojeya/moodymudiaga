@@ -20,7 +20,7 @@
     }
 
     &__ball {
-        background-image: radial-gradient($red-dark-secondary, $red-dark);
+        background-image: radial-gradient($crimson 45%, $red-light 55%);
         border-radius: 50%;
         height: 5rem;
         width: 5rem;
@@ -70,7 +70,7 @@
         &,
         &::after,
         &::before {
-            background-color: $red-dark-secondary;
+            background-color: $crimson;
             display: inline-block;
             height: 2px;
             width: 3rem;

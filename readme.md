@@ -1,4 +1,4 @@
-This is the official website of Mudiaga Moody Uwojeya.
+## This is the official website of Mudiaga Moody Uwojeya.
 
 This website is for my business as a freelance web developer and digital marketer.
 It is at the beta stage right now. I am going to keep adding code to it little by

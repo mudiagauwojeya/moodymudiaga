@@ -23,7 +23,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh repeat(4, minmax(min-content, max-content)); }
+  grid-template-rows: 80vh repeat(4, minmax(min-content, max-content));
+  row-gap: 2rem; }
 
 .heading-primary {
   color: #b1a7a6ff;
@@ -107,7 +108,7 @@ body {
 
 .feature {
   background-color: #d3d3d3ff;
-  clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%);
+  clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 98%, 50% 100%, 0 98%);
   color: #810000;
   padding: 6rem 2.5rem; }
   .feature__shape {
@@ -155,20 +156,41 @@ body {
 
 .header {
   background-color: #6e1423ff;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
   padding: 2.8rem 2.5rem 4rem;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%); }
+  position: relative; }
+  .header__bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .15;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: -1; }
+  .header__video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
   .header__brand {
     display: inline-block;
     width: 15rem; }
   .header__logo {
-    box-shadow: 0 0.5rem 1.5rem rgba(236, 1, 1, 0.5);
+    box-shadow: 0 0.3rem 1.5rem rgba(22, 26, 29, 0.5);
     width: 100%;
     max-width: 10rem; }
   .header__content {
-    margin-top: 6rem; }
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column; }
   .header__paragraph {
-    color: #d3d3d3ff;
-    margin-top: 2rem; }
+    color: #ffffffff;
+    margin: 2rem 0; }
+  .header__chevron {
+    fill: #b1a7a6ff;
+    height: 9rem;
+    width: 9rem;
+    align-self: center; }
 
 .navigation {
   position: fixed;
@@ -274,5 +296,5 @@ body {
 
 .testimonial {
   background-color: #641220ff;
-  clip-path: polygon(0 0, 50% 4%, 100% 0, 100% 97%, 50% 100%, 0 97%);
+  clip-path: polygon(0 2%, 50% 6%, 100% 2%, 100% 97%, 50% 100%, 0 97%);
   padding: 6rem 2.5rem; }

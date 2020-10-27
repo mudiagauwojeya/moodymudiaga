@@ -35,7 +35,7 @@
         <div class="navigation__menu">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Project</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Projects</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
             </ul>
@@ -78,16 +78,25 @@
 
     <!-- header section -->
     <header class="header">
+        <div class="header__bg-video">
+            <video class="header__video" autoplay muted loop>
+                <source src="images/laptop.mp4" type="video/mp4">
+                Your current browser does not support video, please upgrade your browser.
+            </video>
+        </div>
         <div class="header__brand">
-           <img src="images/logo-trans-.png" alt="mudi logo" class="header__logo">
+            <img src="images/mudi-logo-lightred.png" alt="mudi logo" class="header__logo">
         </div>
         <div class="header__content">
             <h1 class="heading-primary">Grow your business</h1>
             <p class="header__paragraph">
                 by getting seen by the people looking for your products or services on the internet,
                 drive them to your website, give them a painless user experience and convert them
-                to recurring customers. It is as simple as ... &darr;
+                to recurring customers. It is as simple as ... 
             </p>
+            <svg class="header__chevron">
+                <use href="images/sprite.svg#icon-keyboard_arrow_down"></use>
+            </svg>
         </div>
     </header>
 
@@ -147,7 +156,8 @@
 
             <label for="#message" class="contact__label">
                 Message:
-                <textarea name="message" id="#message" cols="30" rows="15" class="contact__textarea" placeholder="Describe your project..."></textarea>
+                <textarea name="message" id="#message" cols="30" rows="15" class="contact__textarea"
+                    placeholder="Describe your project..."></textarea>
             </label>
 
             <input type="submit" value="Submit" class="contact__button">

@@ -1,7 +1,6 @@
 /* light shades */
 /* red shades */
 /* black shades */
-/* SCSS HEX */
 *,
 *::after,
 *::before {
@@ -33,6 +32,13 @@ body {
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.3;
+  text-transform: uppercase; }
+
+.heading-secondary {
+  color: #f5f3f4ff;
+  font-family: var(--heading);
+  font-size: 2.3rem;
+  font-weight: 700;
   text-transform: uppercase; }
 
 .m {
@@ -109,9 +115,9 @@ body {
 
 .feature {
   background-color: #d3d3d3ff;
-  clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 98%, 50% 100%, 0 98%);
+  clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 98%, 50% 100%, 0 98%);
   color: #810000;
-  padding: 6rem 2.5rem; }
+  padding: 10rem 2.5rem; }
   .feature__shape {
     background-color: #f5f3f4ff;
     box-shadow: 0 0.5rem 1rem rgba(22, 26, 29, 0.3);
@@ -139,6 +145,22 @@ body {
     fill: #b1a7a6ff;
     height: 4rem;
     width: 4rem; }
+  .feature__item--2 {
+    position: absolute;
+    top: 49%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    fill: #810000;
+    height: 6.5rem;
+    width: 6.5rem; }
+  .feature__item--3 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    fill: #cd0a0a;
+    height: 4rem;
+    width: 4rem; }
   .feature__description {
     background-image: linear-gradient(145deg, rgba(218, 30, 55, 0.6), rgba(205, 10, 10, 0.9));
     border-radius: .3rem;
@@ -148,7 +170,7 @@ body {
       margin-bottom: 4rem; }
   .feature__highlight {
     color: #ffffffff;
-    padding: 1rem .5rem; }
+    padding: 1rem .8rem; }
 
 .footer {
   background-color: #641220ff;

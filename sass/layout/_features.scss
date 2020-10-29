@@ -1,8 +1,8 @@
 .feature {
     background-color: $light-gray;
-    clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 98%, 50% 100%, 0 98%);
+    clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 98%, 50% 100%, 0 98%);
     color: $red-deep;
-    padding: 6rem 2.5rem;
+    padding: 10rem 2.5rem;
 
     &__shape {
         background-color: $cultured;
@@ -41,6 +41,28 @@
         width: 4rem;
     }
 
+    &__item--2 {
+        position: absolute;
+        top: 49%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+
+        fill: $red-deep;
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+
+    &__item--3 {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+
+        fill: $red-dark;
+        height: 4rem;
+        width: 4rem;
+    }
+
     &__description {
         background-image: linear-gradient(145deg, rgba($crimson, .6), rgba($red-dark, .9));
         border-radius: .3rem;
@@ -54,6 +76,6 @@
 
     &__highlight {
         color: $white;
-        padding: 1rem .5rem;
+        padding: 1rem .8rem;
     }
 }

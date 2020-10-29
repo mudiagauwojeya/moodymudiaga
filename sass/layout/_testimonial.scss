@@ -1,21 +1,39 @@
 .testimonial {
     background-color: $persian-plum;
-    clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 95%, 50% 100%, 0 95%);
     padding: 6rem 2.5rem;
 
     &__container {
         display: flex;
-        align-items: flex-start;
         flex-flow: column nowrap;
-        justify-content: space-evenly;
-
-        &:not(:last-child) {
-            margin-bottom: 2rem;
-        }
+        padding: 6rem 0;
     }
 
-    &__photo {
-        width: 66.666666%;
+    &__customer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+
+          &:not(:last-of-type) {
+              margin-bottom: 5rem;
+          }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info--1 {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    &__icon {
+        fill: $white;
+        height: 9rem;
+        width: 9rem;
+        margin-right: 1rem;
     }
 
     &__description {

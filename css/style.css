@@ -349,17 +349,29 @@ body {
 
 .testimonial {
   background-color: #641220ff;
-  clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 95%, 50% 100%, 0 95%);
   padding: 6rem 2.5rem; }
   .testimonial__container {
     display: flex;
-    align-items: flex-start;
     flex-flow: column nowrap;
-    justify-content: space-evenly; }
-    .testimonial__container:not(:last-child) {
-      margin-bottom: 2rem; }
-  .testimonial__photo {
-    width: 66.666666%; }
+    padding: 6rem 0; }
+  .testimonial__customer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; }
+    .testimonial__customer:not(:last-of-type) {
+      margin-bottom: 5rem; }
+  .testimonial__info {
+    display: flex;
+    align-items: center; }
+  .testimonial__info--1 {
+    display: flex;
+    flex-flow: row-reverse; }
+  .testimonial__icon {
+    fill: #ffffffff;
+    height: 9rem;
+    width: 9rem;
+    margin-right: 1rem; }
   .testimonial__description {
     color: #b1a7a6ff;
     font-size: 1.2rem; }

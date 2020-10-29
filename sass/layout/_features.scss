@@ -1,6 +1,6 @@
 .feature {
     background-color: $light-gray;
-    clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 98%, 50% 100%, 0 98%);
+    clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 99%, 50% 100%, 0 99%);
     color: $red-deep;
     padding: 10rem 2.5rem;
 
@@ -20,7 +20,7 @@
         justify-content: center;
 
         &:not(:last-of-type) {
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
         }
     }
 
@@ -58,7 +58,7 @@
         left: 60%;
         transform: translate(-50%, -50%);
 
-        fill: $red-dark;
+         fill: $crimson;
         height: 4rem;
         width: 4rem;
     }

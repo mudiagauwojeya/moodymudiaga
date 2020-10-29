@@ -1,18 +1,18 @@
 /* light shades */
 /* red shades */
 /* black shades */
+:root {
+  color: #f5f3f4ff;
+  font-size: 62.5%;
+  --text: 'Commissioner', sans-serif;
+  --heading: 'Petrona', serif; }
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
-
-:root {
-  color: #f5f3f4ff;
-  font-size: 62.5%;
-  --text: 'Commissioner', sans-serif;
-  --heading: 'Petrona', serif; }
 
 body {
   background-color: #eb8f8f;
@@ -23,7 +23,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh repeat(4, minmax(min-content, max-content));
+  grid-template-rows: 70vh repeat(4, minmax(min-content, max-content));
   row-gap: 2rem; }
 
 .heading-primary {
@@ -40,6 +40,13 @@ body {
   font-size: 2.3rem;
   font-weight: 700;
   text-transform: uppercase; }
+
+.heading-tertiary {
+  color: #d3d3d3ff;
+  font-family: var(--heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize; }
 
 .m {
   margin: 1rem; }
@@ -115,7 +122,7 @@ body {
 
 .feature {
   background-color: #d3d3d3ff;
-  clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 98%, 50% 100%, 0 98%);
+  clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 99%, 50% 100%, 0 99%);
   color: #810000;
   padding: 10rem 2.5rem; }
   .feature__shape {
@@ -132,7 +139,7 @@ body {
     align-items: center;
     justify-content: center; }
     .feature__shape:not(:last-of-type) {
-      margin-bottom: 2rem; }
+      margin-bottom: 4rem; }
   .feature__item {
     fill: #da1e37ff;
     height: 10rem;
@@ -158,7 +165,7 @@ body {
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
-    fill: #cd0a0a;
+    fill: #da1e37ff;
     height: 4rem;
     width: 4rem; }
   .feature__description {
@@ -342,5 +349,21 @@ body {
 
 .testimonial {
   background-color: #641220ff;
-  clip-path: polygon(0 2%, 50% 6%, 100% 2%, 100% 97%, 50% 100%, 0 97%);
+  clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 95%, 50% 100%, 0 95%);
   padding: 6rem 2.5rem; }
+  .testimonial__container {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    justify-content: space-evenly; }
+    .testimonial__container:not(:last-child) {
+      margin-bottom: 2rem; }
+  .testimonial__photo {
+    width: 66.666666%; }
+  .testimonial__description {
+    color: #b1a7a6ff;
+    font-size: 1.2rem; }
+  .testimonial__review {
+    color: #f5f3f4ff;
+    font-size: 1.4rem;
+    margin-top: 1rem; }

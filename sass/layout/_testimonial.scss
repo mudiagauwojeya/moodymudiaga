@@ -1,5 +1,31 @@
 .testimonial {
     background-color: $persian-plum;
-    clip-path: polygon(0 2%, 50% 6%, 100% 2%, 100% 97%, 50% 100%, 0 97%);
+    clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 95%, 50% 100%, 0 95%);
     padding: 6rem 2.5rem;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__photo {
+        width: 66.666666%;
+    }
+
+    &__description {
+        color: $silver-chalice;
+        font-size: 1.2rem;
+    }
+
+    &__review {
+        color: $cultured;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
 }

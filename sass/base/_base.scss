@@ -1,16 +1,16 @@
+:root {
+    color: $cultured;
+    font-size: 62.5%;
+    --text: 'Commissioner', sans-serif;
+    --heading: 'Petrona', serif;
+}
+
 *,
 *::after,
 *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-:root {
-    color: $cultured;
-    font-size: 62.5%;
-    --text: 'Commissioner', sans-serif;
-    --heading: 'Petrona', serif;
 }
 
 body {
@@ -23,6 +23,6 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 80vh repeat(4, minmax(min-content, max-content));
+    grid-template-rows: 70vh repeat(4, minmax(min-content, max-content));
     row-gap: 2rem;
 }

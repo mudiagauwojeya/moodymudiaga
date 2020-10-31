@@ -1,7 +1,7 @@
 .contact {
     background-color: $light-gray;
-    clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%);
-    padding: 8rem 2.5rem;
+    clip-path: polygon(0 1%, 50% 3.5%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
+    padding: 6rem 2.5rem;
 
     &__form {
         background-color: $red-light;
@@ -23,13 +23,14 @@
     &__input,
     &__textarea {
         background-color: $grey;
-        border: 1px solid $blood-red;
+        border: none;
         border-radius: .4rem;
         display: inline-block;
         font-family: inherit;
         font-size: inherit;
         margin-top: .4rem;
         padding: 1.2rem;
+        transition: border 200ms ease, background-color 200ms ease;
         width: 100%;
     }
 
@@ -40,6 +41,7 @@
     &__input:focus,
     &__textarea:focus {
         background-color: $light-gray;
+        border: 1.5px solid $blood-red;
         outline: none;
     }
 
@@ -47,17 +49,21 @@
         background-color: $red-deep;
         border: none;
         border-radius: 50rem;
+        box-shadow: 0 .7rem 1rem rgba($eerie-black, .5);
         color: $cultured;
         cursor: pointer;
         display: inline-block;
         font-size: 1.7rem;
         padding: 1.3rem 2rem;
         margin: 0 auto;
+        transform: translateY(-.5rem);
+        transition: all 100ms ease-in;
         width: 70%;
 
         &:focus {
-            background-color: $red-dark;
+            background-color: lighten($red-deep, 8%);
             outline: none;
+            transform: translateY(-.2rem);
         }
     }
 }

@@ -2,7 +2,7 @@
     background-color: $light-gray;
     clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 99%, 50% 100%, 0 99%);
     color: $red-deep;
-    padding: 10rem 2.5rem;
+    padding: 8rem 2.5rem;
 
     &__shape {
         background-color: $cultured;
@@ -58,7 +58,7 @@
         left: 60%;
         transform: translate(-50%, -50%);
 
-         fill: $crimson;
+        fill: $crimson;
         height: 4rem;
         width: 4rem;
     }
@@ -76,6 +76,6 @@
 
     &__highlight {
         color: $white;
-        padding: 1rem .8rem;
+        padding: .5rem 1rem 1.5rem;
     }
 }

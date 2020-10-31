@@ -62,13 +62,13 @@ body {
 
 .contact {
   background-color: #d3d3d3ff;
-  clip-path: polygon(0 2%, 50% 5%, 100% 2%, 100% 97%, 50% 100%, 0 97%);
-  padding: 6rem 2.5rem; }
+  clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%);
+  padding: 8rem 2.5rem; }
   .contact__form {
     background-color: #eb8f8f;
     border-radius: .3rem;
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding: 3rem 1.2rem;
     position: relative; }
@@ -77,26 +77,18 @@ body {
     display: inline-block;
     padding: 1rem 0;
     width: 100%; }
-  .contact__input {
-    background-color: #f1f3de;
-    border: 1px solid #660708ff;
-    border-radius: .4rem;
-    display: block;
-    font-family: inherit;
-    margin-top: .4rem;
-    padding: .4rem 1.2rem;
-    width: 100%; }
-  .contact__textarea {
+  .contact__input, .contact__textarea {
     background-color: #f1f3de;
     border: 1px solid #660708ff;
     border-radius: .4rem;
     display: inline-block;
     font-family: inherit;
     font-size: inherit;
-    padding: .4rem 1.2rem;
-    margin-bottom: 1.5rem;
     margin-top: .4rem;
+    padding: 1.2rem;
     width: 100%; }
+  .contact__textarea {
+    margin-bottom: 1.5rem; }
   .contact__input:focus, .contact__textarea:focus {
     background-color: #d3d3d3ff;
     outline: none; }

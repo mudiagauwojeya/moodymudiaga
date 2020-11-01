@@ -1,7 +1,7 @@
 .contact {
     background-color: $light-gray;
-    clip-path: polygon(0 1%, 50% 3.5%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
-    padding: 6rem 2.5rem;
+    clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 97%, 50% 100%, 0 97%);
+    padding: 9rem 2.5rem;
 
     &__form {
         background-color: $red-light;

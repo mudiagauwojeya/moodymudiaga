@@ -63,8 +63,8 @@ body {
 
 .contact {
   background-color: #d3d3d3ff;
-  clip-path: polygon(0 1%, 50% 3.5%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
-  padding: 6rem 2.5rem; }
+  clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 97%, 50% 100%, 0 97%);
+  padding: 9rem 2.5rem; }
   .contact__form {
     background-color: #eb8f8f;
     border-radius: .3rem;
@@ -125,7 +125,7 @@ body {
   background-color: #d3d3d3ff;
   clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 99%, 50% 100%, 0 99%);
   color: #810000;
-  padding: 6rem 2.5rem; }
+  padding: 9rem 2.5rem; }
   .feature__shape {
     background-color: #f5f3f4ff;
     box-shadow: 0 0.5rem 1rem rgba(22, 26, 29, 0.3);
@@ -184,7 +184,7 @@ body {
   background-color: #641220ff;
   clip-path: polygon(0 2%, 50% 6%, 100% 2%, 100% 100%, 0 100%);
   color: #b1a7a6ff;
-  padding: 6rem 2.5rem 0; }
+  padding: 9rem 2.5rem 0; }
   .footer__list {
     list-style-type: none; }
   .footer__item {
@@ -363,7 +363,7 @@ body {
 .testimonial {
   background-color: #641220ff;
   clip-path: polygon(0 1%, 50% 4%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
-  padding: 6rem 2.5rem; }
+  padding: 9rem 2.5rem; }
   .testimonial__container {
     display: flex;
     flex-flow: column nowrap;

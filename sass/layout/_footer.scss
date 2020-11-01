@@ -32,10 +32,15 @@
 
     &__attribution {
         padding: 1.3rem 0;
+    }
 
-        &:first-of-type {
-            margin-top: 3rem;
-        }
+    &__attribution &__link {
+        font-weight: 700;
+    }
+
+    hr + div {
+        margin: 1rem 0;
+        text-align: center;
     }
 
     &__copyright {

@@ -200,8 +200,11 @@ body {
     color: #b1a7a6ff; }
   .footer__attribution {
     padding: 1.3rem 0; }
-    .footer__attribution:first-of-type {
-      margin-top: 3rem; }
+  .footer__attribution .footer__link {
+    font-weight: 700; }
+  .footer hr + div {
+    margin: 1rem 0;
+    text-align: center; }
   .footer__copyright {
     font-size: 1.35rem;
     margin-top: 3rem;

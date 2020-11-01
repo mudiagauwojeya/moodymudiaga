@@ -17,6 +17,16 @@
         width: 5rem;
         height: 5rem;
         z-index: 50;
+
+        @include breakpoint(28.125em) {
+            top: 1.5rem;
+            right: 1.2rem;
+        }
+
+        @include breakpoint(37.5em) {
+            top: 3.5rem;
+            right: 2rem;
+        }
     }
 
     &__ball {
@@ -28,6 +38,16 @@
         top: 1.2rem;
         right: 1rem;
         transition: transform .3s ease-out;
+
+        @include breakpoint(28.125em) {
+            top: 1.5rem;
+            right: 1.2rem;
+        }
+
+        @include breakpoint(37.5em) {
+            top: 3.5rem;
+            right: 2rem;
+        }
     }
 
     &__menu {
@@ -38,12 +58,10 @@
     }
 
     &__list {
+        @include positioned;
         font-size: 2rem;
         list-style-type: none;
         margin-top: 5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         transform: translate(-250%, 20%);
         transition: transform 400ms ease-out;
     }
@@ -112,13 +130,16 @@
         z-index: 100;
     }
 
-    &__checkbox:checked ~&__menu > &__list {
+    &__checkbox:checked~&__menu>&__list {
         transform: translate(-50%, 20%);
     }
 
-    &__checkbox:checked ~&__menu > &__socials {
-        left: 5rem;
-        transform: translateX(0);
+    &__checkbox:checked~&__menu>&__socials {
+        transform: translate(-50%, 0);
+
+        //  @include breakpoint(28.125em) {
+        //      transform: translate(-50%, -50%);
+        //  }
     }
 
     &__checkbox:checked+&__button &__icon {
@@ -138,27 +159,33 @@
     }
 
     &__socials {
+        @include positioned;
         list-style-type: none;
-        position: absolute;
-        top: 50rem;
-        left: 0;
-        transform: translateX(-150%);
+        margin-top: 50rem;
+        text-align: center;
+        transform: translate(-150%, 0);
         transition: transform 400ms ease-out;
+        width: 70%;
     }
 
-    hr,
     &__social-text {
         color: $silver-chalice;
+        margin: 0 auto;
     }
 
     &__social-text {
         padding: 2rem 0;
+        border-top: 1px solid $silver-chalice;
         text-align: center;
     }
 
     &__social-icon {
         display: inline-block;
-        padding: 1rem 2.3rem;
+        padding: 1rem 1.5rem;
+
+        @include breakpoint(28.125em) {
+            padding: 1rem 2.5rem;
+        }
     }
 
     &__social-link {

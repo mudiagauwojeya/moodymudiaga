@@ -3,6 +3,14 @@
     clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 97%, 50% 100%, 0 97%);
     padding: 9rem 2.5rem;
 
+    @include breakpoint(28.125em) {
+        padding: 9rem 6rem;
+    }
+
+    @include breakpoint(37.5em) {
+        padding: 9rem 8rem;
+    }
+
     &__form {
         background-color: $persian-plum;
         border-radius: .3rem;
@@ -21,8 +29,8 @@
         transition: all 300ms ease-out;
     }
 
-    &__input:placeholder-shown + label,
-    &__textarea:placeholder-shown + label{
+    &__input:placeholder-shown+label,
+    &__textarea:placeholder-shown+label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
@@ -75,6 +83,10 @@
         margin: 0 auto;
         transition: all 100ms ease-in;
         width: 70%;
+
+        @include breakpoint(28.125em) {
+            width: 50%;
+        }
 
         &:focus {
             background-color: darken($crimson, 8%);

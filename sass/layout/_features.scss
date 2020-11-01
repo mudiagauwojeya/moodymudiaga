@@ -4,6 +4,14 @@
     color: $red-deep;
     padding: 9rem 2.5rem;
 
+    @include breakpoint(28.125em) {
+        padding: 9rem 6rem;
+    }
+
+    @include breakpoint(37.5em) {
+        padding: 9rem 8rem;
+    }
+
     &__shape {
         background-color: $cultured;
         box-shadow: 0 .5rem 1rem rgba($eerie-black, .3);

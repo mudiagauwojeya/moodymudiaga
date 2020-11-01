@@ -4,22 +4,30 @@
     padding: 2.8rem 2.5rem 4rem;
     position: relative;
 
-        &__bg-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: .15;
-            overflow: hidden;
-            height: 100%;
-            width: 100%;
-            z-index: -1;
-        }
+    @include breakpoint(28.125em) {
+        padding: 3rem 6rem 3rem;
+    }
 
-        &__video {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
+     @include breakpoint(37.5em) {
+         padding: 5rem 8rem 2rem;
+     }
+
+    &__bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .15;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 
     &__brand {
         display: inline-block;
@@ -43,8 +51,12 @@
         color: $white;
         font-size: 1.8rem;
         margin: 2rem 0 4rem;
+
+        @include breakpoint(28.125em) {
+            margin-bottom: 6rem;
+        }
     }
-    
+
     &__chevron {
         fill: $silver-chalice;
         height: 9rem;

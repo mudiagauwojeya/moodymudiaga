@@ -3,6 +3,14 @@
     clip-path: polygon(0 1%, 50% 4%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
     padding: 9rem 2.5rem;
 
+    @include breakpoint(28.125em) {
+        padding: 9rem 6rem;
+    }
+
+    @include breakpoint(37.5em) {
+        padding: 9rem 8rem;
+    }
+
     &__container {
         display: flex;
         flex-flow: column nowrap;
@@ -14,9 +22,9 @@
         flex-flow: column nowrap;
         justify-content: flex-start;
 
-          &:not(:last-of-type) {
-              margin-bottom: 5rem;
-          }
+        &:not(:last-of-type) {
+            margin-bottom: 5rem;
+        }
     }
 
     &__info {

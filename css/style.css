@@ -322,6 +322,9 @@ body {
     z-index: 100; }
   .navigation__checkbox:checked ~ .navigation__menu > .navigation__list {
     transform: translate(-50%, 20%); }
+  .navigation__checkbox:checked ~ .navigation__menu > .navigation__socials {
+    left: 5rem;
+    transform: translateX(0); }
   .navigation__checkbox:checked + .navigation__button .navigation__icon {
     background-color: transparent; }
   .navigation__checkbox:checked + .navigation__button .navigation__icon:before {
@@ -336,7 +339,9 @@ body {
     list-style-type: none;
     position: absolute;
     top: 50rem;
-    left: 5rem; }
+    left: 0;
+    transform: translateX(-150%);
+    transition: transform 400ms ease-out; }
   .navigation hr, .navigation__social-text {
     color: #b1a7a6ff; }
   .navigation__social-text {

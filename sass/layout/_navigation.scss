@@ -116,6 +116,11 @@
         transform: translate(-50%, 20%);
     }
 
+    &__checkbox:checked ~&__menu > &__socials {
+        left: 5rem;
+        transform: translateX(0);
+    }
+
     &__checkbox:checked+&__button &__icon {
         background-color: transparent;
     }
@@ -136,7 +141,9 @@
         list-style-type: none;
         position: absolute;
         top: 50rem;
-        left: 5rem;
+        left: 0;
+        transform: translateX(-150%);
+        transition: transform 400ms ease-out;
     }
 
     hr,

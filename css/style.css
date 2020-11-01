@@ -66,7 +66,7 @@ body {
   clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 97%, 50% 100%, 0 97%);
   padding: 9rem 2.5rem; }
   .contact__form {
-    background-color: #eb8f8f;
+    background-color: #641220ff;
     border-radius: .3rem;
     display: block;
     font-size: 1.6rem;
@@ -98,14 +98,14 @@ body {
     margin-bottom: 1.5rem; }
   .contact__input:focus, .contact__textarea:focus {
     background-color: #f5f3f4ff;
-    border: 2px solid #21b421;
+    border: 1.4px solid #36db36;
     outline: none; }
   .contact__input::placeholder, .contact__textarea::placeholder {
     color: #ec0101; }
   .contact__input:invalid, .contact__textarea:invalid {
-    border: 0.5px solid #ec0101; }
+    border: 0.5px solid #eb8f8f; }
   .contact__button {
-    background-color: #810000;
+    background-color: #da1e37ff;
     border: none;
     border-radius: 50rem;
     box-shadow: 0 0.7rem 1rem rgba(22, 26, 29, 0.5);
@@ -118,7 +118,7 @@ body {
     transition: all 100ms ease-in;
     width: 70%; }
     .contact__button:focus {
-      background-color: #aa0000;
+      background-color: #b6192e;
       outline: none; }
 
 .feature {

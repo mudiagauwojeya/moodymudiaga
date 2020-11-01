@@ -4,7 +4,7 @@
     padding: 9rem 2.5rem;
 
     &__form {
-        background-color: $red-light;
+        background-color: $persian-plum;
         border-radius: .3rem;
         display: block;
         font-size: 1.6rem;
@@ -48,7 +48,7 @@
     &__input:focus,
     &__textarea:focus {
         background-color: $cultured;
-        border: 2px solid $valid-green;
+        border: 1.4px solid $valid-green;
         outline: none;
     }
 
@@ -59,11 +59,11 @@
 
     &__input:invalid,
     &__textarea:invalid {
-        border: .5px solid $red-primary;
+        border: .5px solid $red-light;
     }
 
     &__button {
-        background-color: $red-deep;
+        background-color: $crimson;
         border: none;
         border-radius: 50rem;
         box-shadow: 0 .7rem 1rem rgba($eerie-black, .5);
@@ -77,7 +77,7 @@
         width: 70%;
 
         &:focus {
-            background-color: lighten($red-deep, 8%);
+            background-color: darken($crimson, 8%);
             outline: none;
         }
     }

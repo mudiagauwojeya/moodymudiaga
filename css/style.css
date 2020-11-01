@@ -274,6 +274,7 @@ body {
   .navigation__menu {
     opacity: 0;
     position: relative;
+    transform: translateX(-100%);
     width: 0; }
   .navigation__list {
     font-size: 2rem;
@@ -282,8 +283,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%);
-    transition: transform .4s ease-out 1s; }
+    transform: translate(-250%, 20%);
+    transition: transform 400ms ease-out; }
   .navigation__item {
     font-weight: 600;
     letter-spacing: .2rem;
@@ -316,8 +317,11 @@ body {
     transform: scale(50); }
   .navigation__checkbox:checked ~ .navigation__menu {
     opacity: 1;
+    transform: translateX(0);
     width: 100%;
     z-index: 100; }
+  .navigation__checkbox:checked ~ .navigation__menu > .navigation__list {
+    transform: translate(-50%, 20%); }
   .navigation__checkbox:checked + .navigation__button .navigation__icon {
     background-color: transparent; }
   .navigation__checkbox:checked + .navigation__button .navigation__icon:before {

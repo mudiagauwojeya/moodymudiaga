@@ -25,6 +25,9 @@ body {
   display: grid;
   grid-template-rows: 80vh repeat(4, minmax(min-content, max-content));
   row-gap: 1rem; }
+  @media only screen and (min-width: 37.5em) {
+    .container {
+      grid-template-rows: 60vh repeat(4, minmax(min-content, max-content)); } }
 
 .heading, .heading-primary, .heading-secondary, .heading-tertiary {
   color: #f5f3f4ff;
@@ -187,6 +190,8 @@ body {
   .feature__description {
     background-image: linear-gradient(145deg, rgba(218, 30, 55, 0.6), rgba(205, 10, 10, 0.9));
     border-radius: .3rem;
+    margin: 0 auto;
+    max-width: 35rem;
     text-align: center;
     width: 100%; }
     .feature__description:not(:last-of-type) {

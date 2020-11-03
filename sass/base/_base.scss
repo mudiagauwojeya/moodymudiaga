@@ -25,4 +25,8 @@ body {
     display: grid;
     grid-template-rows: 80vh repeat(4, minmax(min-content, max-content));
     row-gap: 1rem;
+
+    @include breakpoint(37.5em) {
+        grid-template-rows: 60vh repeat(4, minmax(min-content, max-content));
+    }
 }

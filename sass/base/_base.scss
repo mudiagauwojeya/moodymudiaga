@@ -23,10 +23,10 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 80vh repeat(4, minmax(min-content, max-content));
+    grid-template-rows: 80vh repeat(4, max-content);
     row-gap: 1rem;
 
     @include breakpoint(37.5em) {
-        grid-template-rows: 60vh repeat(4, minmax(min-content, max-content));
+        grid-template-rows: 60vh repeat(4, max-content);
     }
 }

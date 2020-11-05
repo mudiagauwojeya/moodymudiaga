@@ -47,10 +47,10 @@
         flex-direction: column;
 
         @include breakpoint(37.5em) {
-            margin-top: 10rem;
+            margin-top: 7rem;
         }
 
-        @include breakpoint(47.5em) {
+        @include breakpoint(43.75em) {
             margin-top: 10rem;
         }
     }

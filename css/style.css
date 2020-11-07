@@ -144,7 +144,9 @@ body {
   background-color: #d3d3d3ff;
   clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 99%, 50% 100%, 0 99%);
   color: #810000;
-  padding: 9rem 2.5rem; }
+  padding: 9rem 2.5rem;
+  display: grid;
+  row-gap: 5rem; }
   @media only screen and (min-width: 28.125em) {
     .feature {
       padding: 9rem 6rem; } }
@@ -155,10 +157,13 @@ body {
     .feature {
       padding: 9rem 3rem;
       display: grid;
-      grid-template-rows: repeat(4, 20rem);
-      gap: 1rem; } }
-  .feature > div:not(:last-of-type) {
-    margin-bottom: 5rem; }
+      grid-template-columns: repeat(auto-fit, 30rem);
+      column-gap: 2rem;
+      row-gap: 4rem;
+      justify-content: center; } }
+  .feature__features--1, .feature__features--2, .feature__features--3, .feature__features--4 {
+    margin: 0 auto;
+    width: 30rem; }
   .feature__shape {
     background-color: #f5f3f4ff;
     box-shadow: 0 0.5rem 1rem rgba(22, 26, 29, 0.3);

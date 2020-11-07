@@ -1,4 +1,4 @@
-<img src="images/logo-trans-.png" alt="The official logo of Mudi" width="300px">
+<img src="images/mudi-logo-lightred.png" alt="The official logo of Mudi" width="300px">
 
 <br>
 <br>
@@ -21,4 +21,5 @@ The technologies I am using are - sass/scss and nodejs.
 + SEO
 + backend
 + CMS
++ UI/UX
 

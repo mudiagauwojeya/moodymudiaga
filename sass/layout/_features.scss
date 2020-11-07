@@ -16,8 +16,6 @@
         padding: 9rem 3rem;
         display: grid;
         grid-template-rows: repeat(4, 20rem);
-        grid-auto-flow: column;
-        grid-auto-columns: autofit;
         gap: 1rem;
     }
 

@@ -12,8 +12,17 @@
         padding: 9rem 8rem 0;
     }
 
+    @include breakpoint(43.75em) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &__list {
         list-style-type: none;
+
+        @include breakpoint(43.75em) {
+            flex: 0 0 50%;
+        }
     }
 
     &__item {
@@ -46,15 +55,22 @@
         font-weight: 700;
     }
 
-    hr+div {
-        margin: 1rem 0;
-        text-align: center;
+    [class="footer__list"]:last-of-type {
+        border-top: 1px solid $silver-chalice;
+
+        @include breakpoint(43.75em) {
+            border: none;
+        }
     }
 
     &__copyright {
         font-size: 1.35rem;
         margin-top: 3rem;
         text-align: center;
+
+        @include breakpoint(43.75em) {
+            flex: 0 0 100%;
+        }
     }
 
 }

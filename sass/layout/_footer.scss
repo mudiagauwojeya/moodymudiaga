@@ -15,6 +15,7 @@
     @include breakpoint(43.75em) {
         display: flex;
         flex-wrap: wrap;
+        padding: 15rem 15rem 0;
     }
 
     &__list {

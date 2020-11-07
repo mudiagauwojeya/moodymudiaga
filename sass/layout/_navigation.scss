@@ -12,21 +12,11 @@
         box-shadow: 0 .5rem 1.5rem rgba($light-gray, .5);
         border-radius: 50%;
         position: fixed;
-        top: 1.2rem;
+        top: 3.5rem;
         right: 1rem;
         width: 5rem;
         height: 5rem;
         z-index: 50;
-
-        @include breakpoint(28.125em) {
-            top: 1.5rem;
-            right: 1.2rem;
-        }
-
-        @include breakpoint(37.5em) {
-            top: 3.5rem;
-            right: 2rem;
-        }
     }
 
     &__ball {
@@ -35,19 +25,9 @@
         height: 5rem;
         width: 5rem;
         position: fixed;
-        top: 1.2rem;
+        top: 3.5rem;
         right: 1rem;
         transition: transform .3s ease-out;
-
-        @include breakpoint(28.125em) {
-            top: 1.5rem;
-            right: 1.2rem;
-        }
-
-        @include breakpoint(37.5em) {
-            top: 3.5rem;
-            right: 2rem;
-        }
     }
 
     &__menu {

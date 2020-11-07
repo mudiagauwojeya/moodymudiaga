@@ -31,7 +31,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 75vh repeat(4, max-content);
+  grid-template-rows: 100vh repeat(4, max-content);
   row-gap: 1rem; }
 
 .heading, .heading-primary, .heading-secondary, .heading-tertiary {
@@ -43,6 +43,9 @@ body {
 
 .heading-primary {
   font-size: 4.5rem; }
+  @media only screen and (min-width: 43.75em) {
+    .heading-primary {
+      font-size: 6rem; } }
 
 .heading-secondary {
   font-size: 2.3rem;
@@ -142,7 +145,7 @@ body {
 
 .feature {
   background-color: #d3d3d3ff;
-  clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  clip-path: polygon(0 1%, 50% 4%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
   color: #810000;
   padding: 9rem 2.5rem;
   display: grid;
@@ -234,7 +237,8 @@ body {
   @media only screen and (min-width: 43.75em) {
     .footer {
       display: flex;
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      padding: 15rem 15rem 0; } }
   .footer__list {
     list-style-type: none; }
     @media only screen and (min-width: 43.75em) {
@@ -270,15 +274,18 @@ body {
 
 .header {
   background-color: #6e1423ff;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
-  padding: 2.8rem 2.5rem 4rem;
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
+  padding: 5rem 2.5rem 0;
   position: relative; }
   @media only screen and (min-width: 28.125em) {
     .header {
-      padding: 3rem 6rem 3rem; } }
+      padding: 5rem 6rem 0; } }
   @media only screen and (min-width: 37.5em) {
     .header {
-      padding: 5rem 8rem 2rem; } }
+      padding: 5rem 8rem 0; } }
+  @media only screen and (min-width: 43.75em) {
+    .header {
+      padding: 5rem 15rem 0; } }
   .header__bg-video {
     position: absolute;
     top: 0;
@@ -315,7 +322,12 @@ body {
     margin: 2rem 0 4rem; }
     @media only screen and (min-width: 28.125em) {
       .header__paragraph {
-        margin-bottom: 6rem; } }
+        margin-bottom: 10rem; } }
+    @media only screen and (min-width: 43.75em) {
+      .header__paragraph {
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        max-width: 100rem; } }
   .header__chevron {
     fill: #b1a7a6ff;
     height: 9rem;
@@ -333,36 +345,20 @@ body {
     box-shadow: 0 0.5rem 1.5rem rgba(211, 211, 211, 0.5);
     border-radius: 50%;
     position: fixed;
-    top: 1.2rem;
+    top: 3.5rem;
     right: 1rem;
     width: 5rem;
     height: 5rem;
     z-index: 50; }
-    @media only screen and (min-width: 28.125em) {
-      .navigation__button {
-        top: 1.5rem;
-        right: 1.2rem; } }
-    @media only screen and (min-width: 37.5em) {
-      .navigation__button {
-        top: 3.5rem;
-        right: 2rem; } }
   .navigation__ball {
     background-image: radial-gradient(#da1e37ff 45%, #eb8f8f 55%);
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
     position: fixed;
-    top: 1.2rem;
+    top: 3.5rem;
     right: 1rem;
     transition: transform .3s ease-out; }
-    @media only screen and (min-width: 28.125em) {
-      .navigation__ball {
-        top: 1.5rem;
-        right: 1.2rem; } }
-    @media only screen and (min-width: 37.5em) {
-      .navigation__ball {
-        top: 3.5rem;
-        right: 2rem; } }
   .navigation__menu {
     opacity: 0;
     position: relative;
@@ -472,14 +468,14 @@ body {
     display: flex;
     flex-flow: column nowrap;
     margin: 0 auto;
-    max-width: 60rem;
+    max-width: 65rem;
     padding: 6rem 0; }
   .testimonial__customer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start; }
     .testimonial__customer:not(:last-of-type) {
-      margin-bottom: 5rem; }
+      margin-bottom: 8rem; }
   .testimonial__info {
     display: flex;
     align-items: center; }

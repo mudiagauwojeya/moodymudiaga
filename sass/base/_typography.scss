@@ -9,6 +9,10 @@
 .heading-primary {
     @extend .heading;
     font-size: 4.5rem;
+
+    @include breakpoint(43.75em) {
+        font-size: 6rem;
+    }
 }
 
 .heading-secondary {

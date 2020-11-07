@@ -71,7 +71,7 @@ body {
 
 .contact {
   background-color: #d3d3d3ff;
-  clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 97%, 50% 100%, 0 97%);
+  clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 98%, 50% 100%, 0 98%);
   padding: 9rem 2.5rem; }
   @media only screen and (min-width: 28.125em) {
     .contact {
@@ -85,6 +85,8 @@ body {
     display: block;
     font-size: 1.6rem;
     font-weight: 600;
+    margin: 0 auto;
+    max-width: 55rem;
     padding: 3rem 1.2rem;
     position: relative; }
   .contact__label {
@@ -131,12 +133,12 @@ body {
     margin: 0 auto;
     transition: all 100ms ease-in;
     width: 70%; }
-    @media only screen and (min-width: 28.125em) {
-      .contact__button {
-        width: 50%; } }
     .contact__button:focus {
       background-color: #b6192e;
       outline: none; }
+    @media only screen and (min-width: 28.125em) {
+      .contact__button {
+        width: 50%; } }
 
 .feature {
   background-color: #d3d3d3ff;

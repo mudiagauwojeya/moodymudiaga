@@ -1,6 +1,6 @@
 .contact {
     background-color: $light-gray;
-    clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 97%, 50% 100%, 0 97%);
+    clip-path: polygon(0 0, 50% 3.5%, 100% 0, 100% 98%, 50% 100%, 0 98%);
     padding: 9rem 2.5rem;
 
     @include breakpoint(28.125em) {
@@ -17,6 +17,8 @@
         display: block;
         font-size: 1.6rem;
         font-weight: 600;
+        margin: 0 auto;
+        max-width: 55rem;
         padding: 3rem 1.2rem;
         position: relative;
     }
@@ -84,13 +86,13 @@
         transition: all 100ms ease-in;
         width: 70%;
 
-        @include breakpoint(28.125em) {
-            width: 50%;
-        }
-
         &:focus {
             background-color: darken($crimson, 8%);
             outline: none;
+        }
+
+        @include breakpoint(28.125em) {
+            width: 50%;
         }
     }
 }

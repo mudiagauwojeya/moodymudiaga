@@ -13,7 +13,11 @@
     }
 
     @include breakpoint(43.75em) {
-        padding: 5rem 15rem 0;
+        padding: 5rem 8rem 0;
+    }
+
+    @include breakpoint(56.25em) {
+        padding: 9rem 12rem;
     }
 
     &__bg-video {

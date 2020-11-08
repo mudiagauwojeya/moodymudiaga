@@ -350,6 +350,10 @@ body {
   position: fixed;
   width: 100%;
   z-index: 100; }
+  @media only screen and (min-width: 43.75em) {
+    .navigation {
+      background-color: #eb8f8f;
+      height: 6rem; } }
   .navigation__checkbox {
     display: none; }
   .navigation__button {
@@ -362,6 +366,9 @@ body {
     width: 5rem;
     height: 5rem;
     z-index: 50; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__button {
+        display: none; } }
   .navigation__ball {
     background-image: radial-gradient(#da1e37ff 45%, #eb8f8f 55%);
     border-radius: 50%;
@@ -371,11 +378,21 @@ body {
     top: 3.5rem;
     right: 1rem;
     transition: transform .3s ease-out; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__ball {
+        display: none; } }
   .navigation__menu {
     opacity: 0;
     position: relative;
     transform: translateX(-100%);
     width: 0; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__menu {
+        display: flex;
+        opacity: 1;
+        position: static;
+        transform: translateX(0);
+        width: 100%; } }
   .navigation__list {
     position: absolute;
     top: 50%;
@@ -386,15 +403,31 @@ body {
     margin-top: 5rem;
     transform: translate(-250%, 20%);
     transition: transform 400ms ease-out; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__list {
+        display: block;
+        margin-top: 0;
+        position: static;
+        transform: translate(0, 0);
+        width: 50%; } }
   .navigation__item {
     font-weight: 600;
     letter-spacing: .2rem;
     padding: 2rem; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__item {
+        display: inline-block; } }
   .navigation__link:link {
     color: #ffffffff;
     text-decoration: none; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__link:link {
+        color: #660708ff; } }
   .navigation__link:active, .navigation__link:visited {
     color: #b1a7a6ff; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__link:active, .navigation__link:visited {
+        color: #f1f3de; } }
   .navigation__icon, .navigation__icon::after, .navigation__icon::before {
     background-color: #da1e37ff;
     display: inline-block;
@@ -405,26 +438,44 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+        display: none; } }
   .navigation__icon::after, .navigation__icon::before {
     content: "";
     position: absolute;
     transition: all .4s ease-out;
     transform-origin: center; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__icon::after, .navigation__icon::before {
+        display: none; } }
   .navigation__icon::before {
     top: -.5rem; }
   .navigation__icon::after {
     top: .7rem; }
   .navigation__checkbox:checked ~ .navigation__ball {
     transform: scale(50); }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__checkbox:checked ~ .navigation__ball {
+        display: none; } }
   .navigation__checkbox:checked ~ .navigation__menu {
     opacity: 1;
     transform: translateX(0);
     width: 100%;
     z-index: 100; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__checkbox:checked ~ .navigation__menu {
+        display: none; } }
   .navigation__checkbox:checked ~ .navigation__menu > .navigation__list {
     transform: translate(-50%, 20%); }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__checkbox:checked ~ .navigation__menu > .navigation__list {
+        display: none; } }
   .navigation__checkbox:checked ~ .navigation__menu > .navigation__socials {
     transform: translate(-50%, 0); }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__checkbox:checked ~ .navigation__menu > .navigation__socials {
+        display: none; } }
   .navigation__checkbox:checked + .navigation__button .navigation__icon {
     background-color: transparent; }
   .navigation__checkbox:checked + .navigation__button .navigation__icon:before {
@@ -446,6 +497,12 @@ body {
     transform: translate(-150%, 0);
     transition: transform 400ms ease-out;
     width: 70%; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__socials {
+        margin-top: 0;
+        position: static;
+        transform: translate(0, 0);
+        width: 40%; } }
   .navigation__social-text {
     color: #b1a7a6ff;
     margin: 0 auto; }
@@ -453,6 +510,9 @@ body {
     padding: 2rem 0;
     border-top: 1px solid #b1a7a6ff;
     text-align: center; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__social-text {
+        border: none; } }
   .navigation__social-icon {
     display: inline-block;
     padding: 1rem 1.5rem; }

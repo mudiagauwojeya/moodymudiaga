@@ -3,6 +3,11 @@
     width: 100%;
     z-index: 100;
 
+    @include breakpoint(43.75em) {
+        background-color: $red-light;
+        height: 6rem;
+    }
+
     &__checkbox {
         display: none;
     }
@@ -17,6 +22,10 @@
         width: 5rem;
         height: 5rem;
         z-index: 50;
+
+        @include breakpoint(43.75em) {
+            display: none;
+        }
     }
 
     &__ball {
@@ -28,6 +37,10 @@
         top: 3.5rem;
         right: 1rem;
         transition: transform .3s ease-out;
+
+        @include breakpoint(43.75em) {
+            display: none;
+        }
     }
 
     &__menu {
@@ -35,6 +48,14 @@
         position: relative;
         transform: translateX(-100%);
         width: 0;
+
+        @include breakpoint(43.75em) {
+            display: flex;
+          opacity: 1;
+          position: static;
+          transform: translateX(0);
+          width: 100%;
+        }
     }
 
     &__list {
@@ -44,23 +65,43 @@
         margin-top: 5rem;
         transform: translate(-250%, 20%);
         transition: transform 400ms ease-out;
+
+        @include breakpoint(43.75em) {
+            display: block;
+            margin-top: 0;
+            position: static;
+            transform: translate(0, 0);
+            width: 50%;
+        }
     }
 
     &__item {
         font-weight: 600;
         letter-spacing: .2rem;
         padding: 2rem;
+
+        @include breakpoint(43.75em) {
+            display: inline-block;
+        }
     }
 
     &__link {
         &:link {
             color: $white;
             text-decoration: none;
+
+            @include breakpoint(43.75em) {
+                color: $blood-red;
+            }
         }
 
         &:active,
         &:visited {
             color: $silver-chalice;
+
+            @include breakpoint(43.75em) {
+                color: $grey;
+            }
         }
     }
 
@@ -78,6 +119,10 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 100;
+
+            @include breakpoint(43.75em) {
+                display: none;
+            }
         }
 
         &::after,
@@ -86,6 +131,10 @@
             position: absolute;
             transition: all .4s ease-out;
             transform-origin: center;
+
+            @include breakpoint(43.75em) {
+                display: none;
+            }
         }
 
         &::before {
@@ -101,6 +150,10 @@
 
     &__checkbox:checked~&__ball {
         transform: scale(50);
+
+        @include breakpoint(43.75em) {
+            display: none;
+        }
     }
 
     &__checkbox:checked~&__menu {
@@ -108,18 +161,26 @@
         transform: translateX(0);
         width: 100%;
         z-index: 100;
+
+        @include breakpoint(43.75em) {
+            display: none;
+        }
     }
 
     &__checkbox:checked~&__menu>&__list {
         transform: translate(-50%, 20%);
+
+        @include breakpoint(43.75em) {
+            display: none;
+        }
     }
 
     &__checkbox:checked~&__menu>&__socials {
         transform: translate(-50%, 0);
 
-        //  @include breakpoint(28.125em) {
-        //      transform: translate(-50%, -50%);
-        //  }
+        @include breakpoint(43.75em) {
+            display: none;
+        }
     }
 
     &__checkbox:checked+&__button &__icon {
@@ -146,6 +207,13 @@
         transform: translate(-150%, 0);
         transition: transform 400ms ease-out;
         width: 70%;
+
+        @include breakpoint(43.75em) {
+            margin-top: 0;
+            position: static;
+            transform: translate(0, 0);
+            width: 40%;
+        }
     }
 
     &__social-text {
@@ -157,6 +225,10 @@
         padding: 2rem 0;
         border-top: 1px solid $silver-chalice;
         text-align: center;
+
+        @include breakpoint(43.75em) {
+            border: none;
+        }
     }
 
     &__social-icon {

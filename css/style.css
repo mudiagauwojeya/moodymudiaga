@@ -85,11 +85,12 @@ body {
   .contact__form {
     background-color: #641220ff;
     border-radius: .3rem;
+    box-shadow: 0.5rem 1.5rem 2rem rgba(22, 26, 29, 0.3);
     display: block;
     font-size: 1.6rem;
     font-weight: 600;
     margin: 0 auto;
-    max-width: 55rem;
+    max-width: 65rem;
     padding: 3rem 1.2rem;
     position: relative; }
   .contact__label {
@@ -168,6 +169,7 @@ body {
     .feature {
       column-gap: 2rem; } }
   .feature__features--1, .feature__features--2, .feature__features--3, .feature__features--4 {
+    box-shadow: 0 1rem 1.5rem rgba(22, 26, 29, 0.3);
     margin: 0 auto;
     width: 30rem; }
   .feature__shape {
@@ -245,7 +247,7 @@ body {
       padding: 15rem 8rem 0; } }
   @media only screen and (min-width: 56.25em) {
     .footer {
-      padding: 15rem 12rem; } }
+      padding: 15rem 12rem 0; } }
   .footer__list {
     list-style-type: none; }
     @media only screen and (min-width: 43.75em) {

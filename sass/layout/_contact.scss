@@ -14,11 +14,12 @@
     &__form {
         background-color: $persian-plum;
         border-radius: .3rem;
+        box-shadow: .5rem 1.5rem 2rem rgba($eerie-black, .3);
         display: block;
         font-size: 1.6rem;
         font-weight: 600;
         margin: 0 auto;
-        max-width: 55rem;
+        max-width: 65rem;
         padding: 3rem 1.2rem;
         position: relative;
     }

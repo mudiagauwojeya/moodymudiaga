@@ -19,7 +19,7 @@
     }
 
     @include breakpoint(56.25em) {
-        padding: 15rem 12rem;
+        padding: 15rem 12rem 0;
     }
 
     &__list {

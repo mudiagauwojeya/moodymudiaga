@@ -51,10 +51,15 @@
 
         @include breakpoint(43.75em) {
             display: flex;
-          opacity: 1;
-          position: static;
-          transform: translateX(0);
-          width: 100%;
+            flex-flow: row nowrap;
+            align-content: center;
+            justify-content: flex-end;
+
+            opacity: 1;
+            position: static;
+            transform: translateX(0);
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -68,10 +73,13 @@
 
         @include breakpoint(43.75em) {
             display: block;
+            flex: 0 1 50%;
             margin-top: 0;
             position: static;
             transform: translate(0, 0);
-            width: 50%;
+
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -209,25 +217,41 @@
         width: 70%;
 
         @include breakpoint(43.75em) {
+            flex: 0 1 20%;
             margin-top: 0;
             position: static;
             transform: translate(0, 0);
-            width: 40%;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
     }
 
     &__social-text {
-        color: $silver-chalice;
-        margin: 0 auto;
-    }
-
-    &__social-text {
-        padding: 2rem 0;
         border-top: 1px solid $silver-chalice;
+        color: $white;
+        margin: 0 auto;
+        padding: 2rem 0;
         text-align: center;
 
         @include breakpoint(43.75em) {
             border: none;
+            display: inline-block;
+        }
+
+        &~li {
+            @include breakpoint(43.75em) {
+                display: none;
+            }
+        }
+
+        &:hover ~ li {
+            @include breakpoint(43.75em) {
+                background-color: $silver-chalice;
+                display: block;
+                width: 10rem;
+            }
         }
     }
 
@@ -253,5 +277,9 @@
         fill: $silver-chalice;
         height: 2rem;
         width: 2rem;
+
+        @include breakpoint(43.75em) {
+        fill: $cultured;
+        }
     }
 }

@@ -40,12 +40,22 @@
     &__brand {
         display: inline-block;
         width: 15rem;
+
+        @include breakpoint(43.75em) {
+            position: fixed;
+            z-index: 150;
+         }
     }
 
     &__logo {
         box-shadow: 0 .3rem 1.5rem rgba($eerie-black, .5);
         width: 100%;
         max-width: 10rem;
+
+        @include breakpoint(43.75em) {
+            position: fixed;
+            z-index: 150;
+        }
     }
 
     &__content {

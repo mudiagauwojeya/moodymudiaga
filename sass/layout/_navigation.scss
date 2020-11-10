@@ -63,6 +63,29 @@
         }
     }
 
+    &__brand {
+        @include positioned;
+        background-color: $white;
+        display: inline-block;
+        margin-top: 6rem;
+        width: 15rem;
+        transform: translate();
+
+        @include breakpoint(43.75em) {
+            background-color: transparent;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 10rem;
+
+        @include breakpoint(43.75em) {
+            position: fixed;
+            z-index: 150;
+        }
+    }
+
     &__list {
         @include positioned;
         font-size: 2rem;
@@ -100,6 +123,7 @@
 
             @include breakpoint(43.75em) {
                 color: $blood-red;
+                font-size: 1.8rem;
             }
         }
 
@@ -246,7 +270,7 @@
             }
         }
 
-        &:hover ~ li {
+        &:hover~li {
             @include breakpoint(43.75em) {
                 background-color: $silver-chalice;
                 display: block;
@@ -279,7 +303,7 @@
         width: 2rem;
 
         @include breakpoint(43.75em) {
-        fill: $cultured;
+            fill: $cultured;
         }
     }
 }

@@ -81,9 +81,10 @@
 
     &__menu {
         opacity: 0;
-        position: relative;
+        position: fixed;
         transform: translateX(-100%);
         width: 0;
+        z-index: 150;
 
         @include breakpoint(43.75em) {
             display: flex;
@@ -107,7 +108,6 @@
         @include positioned;
         font-size: 2rem;
         list-style-type: none;
-        margin-top: 5rem;
         transform: translate(-250%, 20%);
         transition: transform 400ms ease-out;
 
@@ -261,7 +261,7 @@
     &__socials {
         @include positioned;
         list-style-type: none;
-        margin-top: 50rem;
+        margin-top: 42rem;
         text-align: center;
         transform: translate(-150%, 0);
         transition: transform 400ms ease-out;

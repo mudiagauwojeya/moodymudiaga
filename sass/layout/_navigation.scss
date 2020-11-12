@@ -1,23 +1,29 @@
 .navigation {
     background-color: $persian-plum;
+    padding-bottom: 1.8rem;
     position: relative;
     z-index: 100;
 
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+
     @include breakpoint(43.75em) {
         background-color: $red-light;
-
-        display: flex;
-        justify-content: space-between;
-
+        padding-bottom: 0;   
         position: fixed;
         width: 100%;
+
+        align-items: center;
     }
 
     &__brand {
         display: inline-block;
-        margin-top: 3rem;
         margin-left: 2.5rem;
         width: 15rem;
+
+        display: flex;
+        align-items: center;
 
         @include breakpoint(28.125em) {
             margin-left: 6rem;
@@ -27,12 +33,8 @@
             margin-left: 8rem;
         }
 
-        @include breakpoint(43.75em) {
-           margin-top: 2rem;
-        }
-
          @include breakpoint(56.25em) {
-             margin-left: 12rem;
+            margin-left: 12rem;
          }
 
     }
@@ -137,7 +139,7 @@
         }
 
         @include breakpoint(56.25em) {
-            padding: 2rem 3rem;
+            padding: 1rem 3rem;
         }
     }
 

@@ -31,8 +31,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 6rem 90vh repeat(4, max-content); }
+  grid-template-rows: 7rem 90vh repeat(4, max-content); }
   @media only screen and (min-width: 43.75em) {
+    .container {
+      grid-template-rows: 70vh repeat(4, max-content); } }
+  @media only screen and (min-width: 56.25em) {
     .container {
       grid-template-rows: 100vh repeat(4, max-content); } }
 
@@ -296,10 +299,11 @@ body {
       padding: 5rem 8rem 0; } }
   @media only screen and (min-width: 43.75em) {
     .header {
-      padding: 5rem 8rem 0; } }
+      margin-top: 7rem;
+      padding: 0 8rem; } }
   @media only screen and (min-width: 56.25em) {
     .header {
-      padding: 9rem 12rem; } }
+      padding: 0 12rem; } }
   .header__bg-video {
     position: absolute;
     top: 0;
@@ -314,7 +318,7 @@ body {
     height: 100%;
     width: 100%; }
   .header__content {
-    margin-top: 10rem;
+    margin-top: 7rem;
     display: flex;
     flex-direction: column; }
     @media only screen and (min-width: 37.5em) {
@@ -343,29 +347,31 @@ body {
 
 .navigation {
   background-color: #641220ff;
+  padding-bottom: 1.8rem;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  align-content: center; }
   @media only screen and (min-width: 43.75em) {
     .navigation {
       background-color: #eb8f8f;
-      display: flex;
-      justify-content: space-between;
+      padding-bottom: 0;
       position: fixed;
-      width: 100%; } }
+      width: 100%;
+      align-items: center; } }
   .navigation__brand {
     display: inline-block;
-    margin-top: 3rem;
     margin-left: 2.5rem;
-    width: 15rem; }
+    width: 15rem;
+    display: flex;
+    align-items: center; }
     @media only screen and (min-width: 28.125em) {
       .navigation__brand {
         margin-left: 6rem; } }
     @media only screen and (min-width: 37.5em) {
       .navigation__brand {
         margin-left: 8rem; } }
-    @media only screen and (min-width: 43.75em) {
-      .navigation__brand {
-        margin-top: 2rem; } }
     @media only screen and (min-width: 56.25em) {
       .navigation__brand {
         margin-left: 12rem; } }
@@ -451,7 +457,7 @@ body {
         padding: 2rem 1.5rem; } }
     @media only screen and (min-width: 56.25em) {
       .navigation__item {
-        padding: 2rem 3rem; } }
+        padding: 1rem 3rem; } }
   .navigation__link:link {
     color: #ffffffff;
     text-decoration: none; }

@@ -1,6 +1,6 @@
 .feature {
     background-color: $light-gray;
-    clip-path: polygon(0 1%, 50% 4%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
+    clip-path: polygon(0 1%, 50% 2%, 100% 1%, 100% 98.5%, 50% 100%, 0 98.5%);
     color: $red-deep;
     padding: 9rem 2.5rem;
 
@@ -8,7 +8,7 @@
     row-gap: 5rem;
 
     @include breakpoint(28.125em) {
-        padding: 9rem 6rem;
+        padding: 3rem 6rem;
     }
 
     @include breakpoint(37.5em) {

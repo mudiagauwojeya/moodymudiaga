@@ -151,14 +151,14 @@ body {
 
 .feature {
   background-color: #d3d3d3ff;
-  clip-path: polygon(0 1%, 50% 4%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
+  clip-path: polygon(0 1%, 50% 2%, 100% 1%, 100% 98.5%, 50% 100%, 0 98.5%);
   color: #810000;
   padding: 9rem 2.5rem;
   display: grid;
   row-gap: 5rem; }
   @media only screen and (min-width: 28.125em) {
     .feature {
-      padding: 9rem 6rem; } }
+      padding: 3rem 6rem; } }
   @media only screen and (min-width: 37.5em) {
     .feature {
       padding: 9rem 8rem; } }
@@ -288,7 +288,7 @@ body {
 
 .header {
   background-color: #6e1423ff;
-  clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 50% 100%, 0 98%);
   padding: 5rem 2.5rem 0;
   position: relative; }
   @media only screen and (min-width: 28.125em) {

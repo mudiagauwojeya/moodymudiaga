@@ -23,6 +23,5 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100vh repeat(4, max-content);
-    row-gap: 1rem;
+    grid-template-rows: 6rem 100vh repeat(4, max-content);
 }

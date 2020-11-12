@@ -1,6 +1,6 @@
 .navigation {
-    position: fixed;
-    width: 100%;
+    background-color: $persian-plum;
+    position: relative;
     z-index: 100;
 
     @include breakpoint(43.75em) {
@@ -64,26 +64,15 @@
     }
 
     &__brand {
-        @include positioned;
-        background-color: $white;
         display: inline-block;
-        margin-top: 6rem;
+        margin-top: 4.8rem;
+        margin-left: 2.5rem;
         width: 15rem;
-        transform: translate();
-
-        @include breakpoint(43.75em) {
-            background-color: transparent;
-        }
     }
 
     &__logo {
         width: 100%;
         max-width: 10rem;
-
-        @include breakpoint(43.75em) {
-            position: fixed;
-            z-index: 150;
-        }
     }
 
     &__list {

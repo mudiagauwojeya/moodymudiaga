@@ -31,7 +31,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 6rem 100vh repeat(4, max-content); }
+  grid-template-rows: 6rem 90vh repeat(4, max-content); }
+  @media only screen and (min-width: 43.75em) {
+    .container {
+      grid-template-rows: 100vh repeat(4, max-content); } }
 
 .heading, .heading-primary, .heading-secondary, .heading-tertiary {
   color: #f5f3f4ff;
@@ -345,7 +348,30 @@ body {
   @media only screen and (min-width: 43.75em) {
     .navigation {
       background-color: #eb8f8f;
-      height: 6rem; } }
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%; } }
+  .navigation__brand {
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+    width: 15rem; }
+    @media only screen and (min-width: 28.125em) {
+      .navigation__brand {
+        margin-left: 6rem; } }
+    @media only screen and (min-width: 37.5em) {
+      .navigation__brand {
+        margin-left: 8rem; } }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__brand {
+        margin-top: 2rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .navigation__brand {
+        margin-left: 12rem; } }
+  .navigation__logo {
+    width: 100%;
+    max-width: 10rem; }
   .navigation__checkbox {
     display: none; }
   .navigation__button {
@@ -353,8 +379,8 @@ body {
     box-shadow: 0 0.5rem 1.5rem rgba(211, 211, 211, 0.5);
     border-radius: 50%;
     position: fixed;
-    top: 3.5rem;
-    right: 1rem;
+    top: 1.8rem;
+    right: 1.3rem;
     width: 5rem;
     height: 5rem;
     z-index: 50; }
@@ -367,8 +393,8 @@ body {
     height: 5rem;
     width: 5rem;
     position: fixed;
-    top: 3.5rem;
-    right: 1rem;
+    top: 1.8rem;
+    right: 1.3rem;
     transition: transform .3s ease-out; }
     @media only screen and (min-width: 43.75em) {
       .navigation__ball {
@@ -383,20 +409,15 @@ body {
         display: flex;
         flex-flow: row nowrap;
         align-content: center;
-        justify-content: flex-end;
+        justify-content: space-around;
         opacity: 1;
         position: static;
         transform: translateX(0);
         width: 100%;
         height: 100%; } }
-  .navigation__brand {
-    display: inline-block;
-    margin-top: 4.8rem;
-    margin-left: 2.5rem;
-    width: 15rem; }
-  .navigation__logo {
-    width: 100%;
-    max-width: 10rem; }
+    @media only screen and (min-width: 56.25em) {
+      .navigation__menu {
+        justify-content: flex-end; } }
   .navigation__list {
     position: absolute;
     top: 50%;
@@ -415,14 +436,22 @@ body {
         position: static;
         transform: translate(0, 0);
         display: flex;
-        align-items: center; } }
+        align-items: center;
+        font-size: 1.8rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .navigation__list {
+        font-size: 2rem; } }
   .navigation__item {
     font-weight: 600;
     letter-spacing: .2rem;
     padding: 2rem; }
     @media only screen and (min-width: 43.75em) {
       .navigation__item {
-        display: inline-block; } }
+        display: inline-block;
+        padding: 2rem 1.5rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .navigation__item {
+        padding: 2rem 3rem; } }
   .navigation__link:link {
     color: #ffffffff;
     text-decoration: none; }

@@ -23,5 +23,9 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 6rem 100vh repeat(4, max-content);
+    grid-template-rows: 6rem 90vh repeat(4, max-content);
+
+     @include breakpoint(43.75em) {
+         grid-template-rows: 100vh repeat(4, max-content);
+     }
 }

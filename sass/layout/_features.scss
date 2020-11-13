@@ -1,6 +1,6 @@
 .feature {
     background-color: $light-gray;
-    clip-path: polygon(0 1%, 50% 2%, 100% 1%, 100% 98.5%, 50% 100%, 0 98.5%);
+    clip-path: polygon(0 0, 50% 1.5%, 100% 0, 100% 98.5%, 50% 100%, 0 98.5%);
     color: $red-deep;
     padding: 9rem 2.5rem;
 
@@ -16,6 +16,7 @@
     }
 
     @include breakpoint(43.75em) {
+        clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%);
         padding: 9rem 3rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, 30rem);

@@ -10,7 +10,7 @@
 
     @include breakpoint(43.75em) {
         background-color: $red-light;
-        padding-bottom: 0;   
+        padding-bottom: 0;
         position: fixed;
         width: 100%;
 
@@ -18,6 +18,7 @@
     }
 
     &__brand {
+        cursor: pointer;
         display: inline-block;
         margin-left: 2.5rem;
         width: 15rem;
@@ -33,13 +34,14 @@
             margin-left: 8rem;
         }
 
-         @include breakpoint(56.25em) {
+        @include breakpoint(56.25em) {
             margin-left: 12rem;
-         }
+        }
 
     }
 
     &__logo {
+        display: block;
         width: 100%;
         max-width: 10rem;
     }
@@ -123,34 +125,38 @@
             font-size: 1.8rem;
         }
 
-         @include breakpoint(56.25em) {
-             font-size: 2rem;
-         }
+        @include breakpoint(56.25em) {
+            font-size: 2rem;
+        }
     }
 
     &__item {
         font-weight: 600;
         letter-spacing: .2rem;
-        padding: 2rem;
 
         @include breakpoint(43.75em) {
             display: inline-block;
-            padding: 2rem 1.5rem;
         }
+    }
 
-        @include breakpoint(56.25em) {
-            padding: 1rem 3rem;
-        }
+    &__home {
+        color: none;
+        text-decoration: none;
     }
 
     &__link {
         &:link {
             color: $white;
+            cursor: pointer;
+            display: inline-block;
+            padding: 2rem;
             text-decoration: none;
+            width: 100%;
 
             @include breakpoint(43.75em) {
                 color: $blood-red;
                 font-size: 1.8rem;
+                padding: 2rem 2.5rem;
             }
         }
 
@@ -162,6 +168,10 @@
                 color: $grey;
             }
         }
+
+        &:hover {
+            background-color: $persian-plum;
+        }
     }
 
     &__icon {
@@ -170,6 +180,7 @@
         &::after,
         &::before {
             background-color: $crimson;
+            cursor: pointer;
             display: inline-block;
             height: 2px;
             width: 3rem;
@@ -264,7 +275,6 @@
         margin-top: 42rem;
         text-align: center;
         transform: translate(-150%, 0);
-        transition: transform 400ms ease-out;
         width: 70%;
 
         @include breakpoint(43.75em) {
@@ -277,41 +287,38 @@
             align-items: center;
             flex-direction: column;
         }
+
+        &:hover>.navigation__social-container {
+            cursor: pointer;
+            display: block;
+        }
+    }
+
+    &__social-container {
+
+        @include breakpoint(43.75em) {
+            background-color: $red-light;
+            display: none;
+            position: absolute;
+            top: 6.7rem;
+            width: 100%;
+        }
+
     }
 
     &__social-text {
         border-top: 1px solid $silver-chalice;
         color: $white;
+        cursor: pointer;
+        display: block;
         margin: 0 auto;
+        max-width: 30rem;
         padding: 2rem 0;
         text-align: center;
 
         @include breakpoint(43.75em) {
             border: none;
             display: inline-block;
-        }
-
-        &~li {
-            @include breakpoint(43.75em) {
-                display: none;
-            }
-        }
-
-        &:hover~li {
-            @include breakpoint(43.75em) {
-                background-color: $silver-chalice;
-                display: block;
-                width: 10rem;
-            }
-        }
-    }
-
-    &__social-icon {
-        display: inline-block;
-        padding: 1rem 1.5rem;
-
-        @include breakpoint(28.125em) {
-            padding: 1rem 2.5rem;
         }
     }
 
@@ -320,7 +327,23 @@
         &:link,
         &:active,
         &:visited {
+            cursor: pointer;
+            display: inline-block;
+            padding: 1rem 2rem;
             text-decoration: none;
+            transition: background-color 200ms ease-in;
+
+            @include breakpoint(28.125em) {
+                padding: 1rem 3rem;
+            }
+        }
+
+        &:hover {
+            background-color: $persian-plum;
+        }
+
+        @include breakpoint(43.75em) {
+            width: 100%;
         }
     }
 

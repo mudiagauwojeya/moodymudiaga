@@ -1,6 +1,6 @@
 .header {
     background-color: $burgundy;
-    clip-path: polygon(0 0, 100% 0, 100% 98%, 50% 100%, 0 98%);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
     padding: 5rem 2.5rem 0;
     position: relative;
 
@@ -13,7 +13,8 @@
     }
 
     @include breakpoint(43.75em) {
-        margin-top: 7rem;
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
+        margin-top: 6.5rem;
         padding: 0 8rem;
     }
 

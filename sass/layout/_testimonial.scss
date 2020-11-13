@@ -1,6 +1,6 @@
 .testimonial {
     background-color: $persian-plum;
-    clip-path: polygon(0 1%, 50% 4%, 100% 1%, 100% 97%, 50% 100%, 0 97%);
+    clip-path: polygon(0 0, 50% 2.5%, 100% 0, 100% 97%, 50% 100%, 0 97%);
     padding: 9rem 2.5rem;
 
     @include breakpoint(28.125em) {

@@ -104,11 +104,6 @@ body {
     padding: 1rem 1.2rem;
     width: 100%;
     transition: all 300ms ease-out; }
-  .contact__input:placeholder-shown + label,
-  .contact__textarea:placeholder-shown + label {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem); }
   .contact__input, .contact__textarea {
     background-color: #f1f3de;
     border: none;
@@ -116,14 +111,14 @@ body {
     display: inline-block;
     font-family: inherit;
     font-size: inherit;
-    margin-top: .4rem;
+    margin-bottom: .8rem;
     padding: 1.2rem;
     width: 100%; }
   .contact__textarea {
     margin-bottom: 1.5rem; }
   .contact__input:focus, .contact__textarea:focus {
     background-color: #f5f3f4ff;
-    border: 1.4px solid #36db36;
+    border: 1.8px solid #36db36;
     outline: none; }
   .contact__input::placeholder, .contact__textarea::placeholder {
     color: #ec0101; }

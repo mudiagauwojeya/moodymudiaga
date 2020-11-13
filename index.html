@@ -29,7 +29,9 @@
     <nav class="navigation">
         <!-- brand -->
         <div class="navigation__brand">
-            <img src="images/logo.png" alt="mudi logo" class="navigation__logo">
+            <a href="index.html" target="_self" class="navigation__link">
+                <img src="images/logo.png" alt="mudi logo" class="navigation__logo">
+            </a>
         </div>
 
         <input type="checkbox" class="navigation__checkbox" id="menu-toggle">
@@ -49,35 +51,37 @@
 
 
             <ul class="navigation__socials">
-                <div class="navigation__social-text">Find Me</div>
-                <li class="navigation__social-icon">
-                    <a href="#contact" class="navigation__social-link">
-                        <svg class="navigation__social-brand">
-                            <use href="images/sprite.svg#icon-mail_outline"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__social-icon">
-                    <a href="https://github.com/moody2times/" class="navigation__social-link">
-                        <svg class="navigation__social-brand">
-                            <use href="images/sprite.svg#icon-github1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__social-icon">
-                    <a href="https://www.linkedin.com/in/mudiaga-moody-uwojeya/" class="navigation__social-link">
-                        <svg class="navigation__social-brand">
-                            <use href="images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__social-icon">
-                    <a href="https://twitter.com/MoodyMudiaga/" class="navigation__social-link">
-                        <svg class="navigation__social-brand">
-                            <use href="images/sprite.svg#icon-twitter1"></use>
-                        </svg>
-                    </a>
-                </li>
+                <div>
+                    <span class="navigation__social-text">Find Me</span>
+                    <li class="navigation__social-icon">
+                        <a href="#contact" class="navigation__social-link">
+                            <svg class="navigation__social-brand">
+                                <use href="images/sprite.svg#icon-mail_outline"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navigation__social-icon">
+                        <a href="https://github.com/moody2times/" class="navigation__social-link">
+                            <svg class="navigation__social-brand">
+                                <use href="images/sprite.svg#icon-github1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navigation__social-icon">
+                        <a href="https://www.linkedin.com/in/mudiaga-moody-uwojeya/" class="navigation__social-link">
+                            <svg class="navigation__social-brand">
+                                <use href="images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="navigation__social-icon">
+                        <a href="https://twitter.com/MoodyMudiaga/" class="navigation__social-link">
+                            <svg class="navigation__social-brand">
+                                <use href="images/sprite.svg#icon-twitter1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </div>
             </ul>
         </div>
     </nav>
@@ -131,7 +135,8 @@
             </div>
             <div class="feature__description">
                 <h3 class="heading-secondary">speed</h3>
-                <p class="feature__highlight">beautiful designs and fast-loading website to increase conversion
+                <p class="feature__highlight">because nobody waits for a slow website, but a fast performing website
+                    increases conversion
                 </p>
             </div>
         </div>
@@ -151,7 +156,7 @@
             <div class="feature__description">
                 <h3 class="heading-secondary"><abbr title="Responsive Web Design">rwd</abbr></h3>
                 <p class="feature__highlight">responsive design to include the billions of people (potential customers)
-                    accessing the internet on mobile devices
+                    now accessing the internet on mobile devices
                 </p>
             </div>
         </div>
@@ -164,7 +169,8 @@
             </div>
             <div class="feature__description">
                 <h3 class="heading-secondary"><abbr title="Accessibility">a11y</abbr></h3>
-                <p class="feature__highlight">make your website easy to use for customers with any form of disability
+                <p class="feature__highlight">do not fail to convert your leads who may have any form of disability,
+                    make your website accessible to all kinds of visitors
                 </p>
             </div>
         </div>
@@ -195,7 +201,7 @@
                         <use href="images/sprite.svg#icon-account_circle"></use>
                     </svg>
                     <div class="testimonial__profile testimonial__profile--1">
-                        <h4 class="heading-tertiary">Naomi Moody</h4>
+                        <h4 class="heading-tertiary">Naomi Fresh</h4>
                         <p class="testimonial__description">Solopreneur - Muna fashion</p>
                     </div>
                 </div>
@@ -210,11 +216,11 @@
     <!-- contact section -->
     <section class="contact" id="contact">
         <form action="mailto:moody.mudiaga@gmail.com" class="contact__form">
-            <input type="text" id="#name" class="contact__input" placeholder="John Doe" required>
             <label for="#name" class="contact__label">Name</label>
+            <input type="text" id="#name" class="contact__input" placeholder="John Doe" required>
 
-            <input type="email" id="#mail" class="contact__input" placeholder="johndoe@example.com" required>
             <label for="#mail" class="contact__label">Email</label>
+            <input type="email" id="#mail" class="contact__input" placeholder="johndoe@example.com" required>
 
             <label for="#message" class="contact__label">Message</label>
             <textarea name="message" id="#message" cols="30" rows="15" class="contact__textarea"

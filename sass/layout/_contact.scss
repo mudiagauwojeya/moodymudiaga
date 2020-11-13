@@ -32,13 +32,6 @@
         transition: all 300ms ease-out;
     }
 
-    &__input:placeholder-shown+label,
-    &__textarea:placeholder-shown+label {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-4rem);
-    }
-
     &__input,
     &__textarea {
         background-color: $grey;
@@ -47,7 +40,7 @@
         display: inline-block;
         font-family: inherit;
         font-size: inherit;
-        margin-top: .4rem;
+        margin-bottom: .8rem;
         padding: 1.2rem;
         width: 100%;
     }
@@ -59,7 +52,7 @@
     &__input:focus,
     &__textarea:focus {
         background-color: $cultured;
-        border: 1.4px solid $valid-green;
+        border: 1.8px solid $valid-green;
         outline: none;
     }
 

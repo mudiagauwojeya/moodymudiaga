@@ -33,3 +33,7 @@ body {
          grid-template-rows: 100vh repeat(4, max-content);
      }
 }
+
+::selection {
+    background-color: $crimson;
+}

@@ -39,6 +39,9 @@ body {
     .container {
       grid-template-rows: 100vh repeat(4, max-content); } }
 
+::selection {
+  background-color: #da1e37ff; }
+
 .heading, .heading-primary, .heading-secondary, .heading-tertiary {
   color: #f5f3f4ff;
   font-family: var(--heading);

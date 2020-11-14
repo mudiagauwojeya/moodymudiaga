@@ -1,4 +1,4 @@
-<img src="images/mudi-logo-lightred.png" alt="The official logo of Mudi" width="300px">
+<img src="images/logo.png" alt="The official logo of Mudi" width="300px">
 
 <br>
 <br>

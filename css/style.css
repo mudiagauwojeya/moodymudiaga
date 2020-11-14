@@ -659,3 +659,9 @@ body {
     color: #ffffffff;
     font-size: 1.6rem;
     margin-top: 1rem; }
+
+.blog {
+  background-color: #641220ff;
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 50% 100%, 0 98%); }
+  .blog__icon {
+    fill: #eb8f8f; }

@@ -1,0 +1,8 @@
+.blog {
+    background-color: $red-primary;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
+
+    &__icon {
+        fill: $red-light;
+    }
+}

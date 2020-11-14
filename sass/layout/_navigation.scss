@@ -154,7 +154,6 @@
             width: 100%;
 
             @include breakpoint(43.75em) {
-                color: $blood-red;
                 font-size: 1.8rem;
                 padding: 2rem 2.5rem;
             }
@@ -165,12 +164,13 @@
             color: $silver-chalice;
 
             @include breakpoint(43.75em) {
-                color: $grey;
+                color: $crimson;
             }
         }
 
         &:hover {
             background-color: $persian-plum;
+            color: $white;
         }
     }
 

@@ -471,16 +471,16 @@ body {
     width: 100%; }
     @media only screen and (min-width: 43.75em) {
       .navigation__link:link {
-        color: #660708ff;
         font-size: 1.8rem;
         padding: 2rem 2.5rem; } }
   .navigation__link:active, .navigation__link:visited {
     color: #b1a7a6ff; }
     @media only screen and (min-width: 43.75em) {
       .navigation__link:active, .navigation__link:visited {
-        color: #f1f3de; } }
+        color: #da1e37ff; } }
   .navigation__link:hover {
-    background-color: #641220ff; }
+    background-color: #641220ff;
+    color: #ffffffff; }
   .navigation__icon, .navigation__icon::after, .navigation__icon::before {
     background-color: #da1e37ff;
     cursor: pointer;

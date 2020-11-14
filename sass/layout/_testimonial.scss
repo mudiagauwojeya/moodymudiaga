@@ -11,12 +11,21 @@
         padding: 9rem 8rem;
     }
 
+    @include breakpoint(56.25em) {
+        padding: 9rem 12rem;
+    }
+
+    
+
     &__container {
         display: flex;
         flex-flow: column nowrap;
         margin: 0 auto;
-        max-width: 65rem;
         padding: 6rem 0;
+
+        &:nth-child(2) {
+            align-self: flex-end;
+        }
     }
 
     &__customer {
@@ -24,9 +33,15 @@
         flex-flow: column nowrap;
         justify-content: flex-start;
 
+        max-width: 60rem;
+
         &:not(:last-of-type) {
-            margin-bottom: 8rem;
+            margin-bottom: 4rem;
         }
+    }
+
+    &__customer--1 {
+        align-self: flex-end;
     }
 
     &__info {

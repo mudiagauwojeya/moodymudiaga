@@ -175,7 +175,7 @@ body {
   .feature__features--1, .feature__features--2, .feature__features--3, .feature__features--4 {
     box-shadow: 0 1rem 1.5rem rgba(22, 26, 29, 0.3);
     margin: 0 auto;
-    transition: transform 200ms ease-in;
+    transition: transform 100ms ease-in;
     width: 30rem; }
     @media only screen and (min-width: 43.75em) {
       .feature__features--1:hover, .feature__features--2:hover, .feature__features--3:hover, .feature__features--4:hover {

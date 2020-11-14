@@ -35,7 +35,7 @@
     &__features--4 {
         box-shadow: 0 1rem 1.5rem rgba($eerie-black, .3);
         margin: 0 auto;
-        transition: transform 200ms ease-in;
+        transition: transform 100ms ease-in;
         width: 30rem;
 
         @include breakpoint(43.75em) {

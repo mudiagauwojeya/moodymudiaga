@@ -1,8 +1,30 @@
 .blog {
-    background-color: $red-primary;
+    background-color: $persian-plum;
     clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
+    padding: 9rem 2.5rem;
+    text-align: center;
+
+    @include breakpoint(28.125em) {
+        padding: 9rem 10rem;
+    }
+
+    @include breakpoint(37.5em) {
+        padding: 9rem 8rem;
+    }
+
+    &__container {
+        margin: 0 auto;
+    }
+
+    &__heading {
+        font-size: 3rem;
+         margin-top: 5rem; 
+    }
 
     &__icon {
-        fill: $red-light;
+        fill: $red-primary;
+        height: 20rem;
+        margin-top: 5rem;
+        width: 20rem;
     }
 }

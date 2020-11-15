@@ -18,13 +18,17 @@
 
     &__heading {
         font-size: 3rem;
-         margin-top: 5rem; 
+         margin-top: 7rem; 
+
+          @include breakpoint(37.5em) {
+              font-size: 5rem;
+          }
     }
 
     &__icon {
-        fill: $red-primary;
-        height: 20rem;
-        margin-top: 5rem;
-        width: 20rem;
+        fill: $crimson;
+        height: 25rem;
+        margin-top: 10rem;
+        width: 25rem;
     }
 }

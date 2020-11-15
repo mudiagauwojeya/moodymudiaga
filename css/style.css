@@ -887,13 +887,18 @@ body {
 }
 .blog__heading {
   font-size: 3rem;
-  margin-top: 5rem;
+  margin-top: 7rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .blog__heading {
+    font-size: 5rem;
+  }
 }
 .blog__icon {
-  fill: #ec0101;
-  height: 20rem;
-  margin-top: 5rem;
-  width: 20rem;
+  fill: #da1e37ff;
+  height: 25rem;
+  margin-top: 10rem;
+  width: 25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

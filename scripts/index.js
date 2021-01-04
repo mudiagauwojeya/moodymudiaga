@@ -1,3 +1,3 @@
-const nameInput = document.getElementById("name");
-const mailInput = document.getElementById("mail");
-const messageTextArea = document.getElementById("message");
+const formInput = document.querySelectorAll("form > input");
+const textArea = document.getElementById("message");
+const label = document.querySelectorAll("label");

@@ -1,9 +1,9 @@
+# PORTFOLIO
+
+<br>
+<br>
+
 <img src="images/logo.png" alt="The official logo of Mudi" width="300px">
-
-<br>
-<br>
-
-# This is the official website of Mudiaga Moody Uwojeya.
 
 Using the *mobile-first approach,* I am going to build this project from ground up
 and improve it gradually. Firstly, I will focus only on the frontend. Thereafter, I will

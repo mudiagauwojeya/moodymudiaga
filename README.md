@@ -24,10 +24,21 @@ The website features a call-to-action button on the hero section.
 ## PAGES
 
 This website will have three pages, namely: Home, Projects, and Blog. The Home page will serve as the index or entry-point to the website. It will be more lengthy because it will sell me as a freelance frontend developer. The Project page as the name implies is meant to display completed and ongoing projects. Finally, the Blog page will serve as a blog when I integrate backend.
+
 <br>
 <br>
 
 ## DEPENDENCIES
+
+The list of dependencies used in this project are :
+```javascript
+    "autoprefixer": "^10.0.1",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.0",
+    "postcss-cli": "^8.1.0",
+    "sass": "^1.29.0"
+```
 
 <br>
 <br>

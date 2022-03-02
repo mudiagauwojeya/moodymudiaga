@@ -9,12 +9,14 @@
 
 ## OVERVIEW
 
-This website will serve as my portfolio website. However, rather than the typical portfolio website, I will use it to advertise my services as a freelance frontend developer. The technologies I am using are - HTML, CSS, Sass/Scss in a nodejs environment.
+This website will serve as my portfolio website. However, rather than the typical portfolio website, I will use it to advertise my services as a freelance frontend developer. The technologies I am using are - HTML, CSS and Sass/Scss in a nodejs environment.
 
 <br>
 <br>
 
 ## FEATURES
+
+The website features a call-to-action button on the hero section.
 
 <br>
 <br>
@@ -34,7 +36,7 @@ This website will serve as my portfolio website. However, rather than the typica
 <br>
 <br>
 
-### To Do
+## To Do
 
 + SEO
 + backend

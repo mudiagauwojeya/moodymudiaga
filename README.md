@@ -14,12 +14,29 @@ This website will serve as my portfolio website. However, rather than the typica
 <br>
 <br>
 
+## FEATURES
+
+<br>
+<br>
+
+## PAGES
+
+<br>
+<br>
+
+## DEPENDENCIES
+
+<br>
+<br>
+
+## HOW TO RUN ON LOCAL MACHINE
+
+<br>
+<br>
 
 ### To Do
 
-+ frontend
 + SEO
 + backend
 + CMS
-+ UI/UX
 

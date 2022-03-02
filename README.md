@@ -38,6 +38,8 @@ The website features a call-to-action button on the hero section.
 
 ## To Do
 
++ Add scroll animation (intersection observer)
++ Migrate to React
 + SEO
 + backend
 + CMS

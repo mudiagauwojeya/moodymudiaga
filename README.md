@@ -6,7 +6,7 @@
 
 ## OVERVIEW
 
-This is my portfolio website.
+This website will serve as my portfolio website. However, rather than the typical portfolio website, I will use it to advertise my services as a freelance frontend developer.
 
 <br>
 <br>

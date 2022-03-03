@@ -14,7 +14,17 @@ This website will serve as my portfolio website. However, rather than the typica
 
 ## FEATURES
 
-The website features a call-to-action button on the hero section.
+The features of the website by the pages are -
++ Home Page
+    * Call-to-action button
+    * Features
+    * Testimonial
+    * Contact Form
++ Project Page
+    * Completed projects
+    * Ongoing projects
++ Blog Page
+    * Articles
 
 <br>
 <br>

@@ -48,7 +48,7 @@ The list of dependencies used in this project are :
 <br>
 <br>
 
-## To Do
+## TO DO
 
 + Add scroll animation (intersection observer)
 + Migrate to React

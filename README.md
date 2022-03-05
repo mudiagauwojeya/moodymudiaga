@@ -53,14 +53,24 @@ The list of dependencies used in this project are :
 
 ## HOW TO RUN ON LOCAL MACHINE
 
+* First, copy the url of this project [https:/github.io/uwojeyamudiaga/moodymudiaga](https:/github.io/uwojeyamudiaga/moodymudiaga)
+* Then on open your terminal and -
+    - navigate to the location you want to create the project in (eg - home or c:/)
+    - enter the command `git clone https:/github.io/uwojeyamudiaga/moodymudiaga`. Alternatively, you can provide the name of the folder you want git to clone the project to with `git clone https:/github.io/uwojeyamudiaga/moodymudiaga <name-of-folder>`
+    - `cd` into the moodymudiaga folder
+    - Run `npm install`
+    - Run `npm start`
+
+In the package.json file you will find the main scripts for development and production. To be sure, for production build run `npm run build`.
+
 <br>
 <br>
 
 ## TO DO
 
 + Add scroll animation (intersection observer)
-+ Migrate to React
 + SEO
++ Migrate to React
 + backend
 + CMS
 

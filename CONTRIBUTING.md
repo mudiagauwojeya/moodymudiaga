@@ -16,7 +16,7 @@ Issues are used to track bugs with this site. If you notice a bug when using the
 
 ### Suggesting Enhancements
 
-Enhancements to this website are often discussed in our community Slack instance. If you are interested in discussing potentially large changes to the website, consider joining the #website-admin channel.
+Enhancements to this website are welcome. Feel free to discuss mail me [mudiaga.dev@gmail.com](mailto:mudiaga.dev@gmail.com).
 
 For enhancements of all sizes, a Github Issue should exist. If you have an idea that you would like to share, consider [file an issue](https://github.com/uwojeyamudiaga/moodymudiaga) using the Feature template. This includes prompts for relevant information that can help with prioritizing and clarifying your idea and rationale.
 

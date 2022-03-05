@@ -61,7 +61,7 @@ The list of dependencies used in this project are :
     - Run `npm install`
     - Run `npm start`
 
-In the package.json file you will find the main scripts for development and production. To be sure, for production build run `npm run build`.
+In the package.json file you will find the scripts for development and production. To be sure, for production build run `npm run build`.
 
 <br>
 <br>
@@ -69,6 +69,7 @@ In the package.json file you will find the main scripts for development and prod
 ## TO DO
 
 + Add scroll animation (intersection observer)
++ Include `parcel` as a dev-dependency
 + SEO
 + Migrate to React
 + backend

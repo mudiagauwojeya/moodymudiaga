@@ -53,10 +53,10 @@ The list of dependencies used in this project are :
 
 ## HOW TO RUN ON LOCAL MACHINE
 
-* First, copy the url of this project [https:/github.io/uwojeyamudiaga/moodymudiaga](https:/github.io/uwojeyamudiaga/moodymudiaga)
+* First, copy the url of this project [https:/github.com/uwojeyamudiaga/moodymudiaga](https:/github.com/uwojeyamudiaga/moodymudiaga)
 * Then on open your terminal and -
     - navigate to the location you want to create the project in (eg - home or c:/)
-    - enter the command `git clone https:/github.io/uwojeyamudiaga/moodymudiaga`. Alternatively, you can provide the name of the folder you want git to clone the project to with `git clone https:/github.io/uwojeyamudiaga/moodymudiaga <name-of-folder>`
+    - enter the command `git clone https:/github.com/uwojeyamudiaga/moodymudiaga`. Alternatively, you can provide the name of the folder you want git to clone the project to with `git clone https:/github.io/uwojeyamudiaga/moodymudiaga <name-of-folder>`
     - `cd` into the moodymudiaga folder
     - Run `npm install`
     - Run `npm start`
@@ -69,7 +69,7 @@ In the package.json file you will find the scripts for development and productio
 ## TO DO
 
 + Add scroll animation (intersection observer)
-+ Include `parcel` as a dev-dependency
++ Include `parcel` as a development dependency
 + SEO
 + Migrate to React
 + backend

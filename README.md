@@ -12,16 +12,26 @@ This website will serve as my portfolio website. However, rather than the typica
 <br>
 <br>
 
-## FEATURES
-
-The website features a call-to-action button on the hero section.
-
-<br>
-<br>
-
 ## PAGES
 
 This website will have three pages, namely: Home, Projects, and Blog. The Home page will serve as the index or entry-point to the website. It will be more lengthy because it will sell me as a freelance frontend developer. The Project page as the name implies is meant to display completed and ongoing projects. Finally, the Blog page will serve as a blog when I integrate backend.
+
+<br>
+<br>
+
+## FEATURES
+
+The features of the website by the pages are -
++ Home Page
+    * Call-to-action button
+    * Features
+    * Testimonial
+    * Contact Form
++ Project Page
+    * Completed projects
+    * Ongoing projects
++ Blog Page
+    * Articles
 
 <br>
 <br>
@@ -43,14 +53,25 @@ The list of dependencies used in this project are :
 
 ## HOW TO RUN ON LOCAL MACHINE
 
+* First, copy the url of this project [https:/github.com/uwojeyamudiaga/moodymudiaga](https:/github.com/uwojeyamudiaga/moodymudiaga)
+* Then on open your terminal and -
+    - navigate to the location you want to create the project in (eg - home or c:/)
+    - enter the command `git clone https:/github.com/uwojeyamudiaga/moodymudiaga`. Alternatively, you can provide the name of the folder you want git to clone the project to with `git clone https:/github.io/uwojeyamudiaga/moodymudiaga <name-of-folder>`
+    - `cd` into the moodymudiaga folder
+    - Run `npm install`
+    - Run `npm start`
+
+In the package.json file you will find the scripts for development and production. To be sure, for production build run `npm run build`.
+
 <br>
 <br>
 
 ## TO DO
 
 + Add scroll animation (intersection observer)
-+ Migrate to React
++ Include `parcel` as a development dependency
 + SEO
++ Migrate to React
 + backend
 + CMS
 

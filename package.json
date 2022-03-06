@@ -17,5 +17,8 @@
   "devDependencies": {
     "parcel": "^2.3.2",
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.9"
   }
 }

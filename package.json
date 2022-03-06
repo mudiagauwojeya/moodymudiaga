@@ -14,10 +14,6 @@
   },
   "author": "Moody Mudiaga",
   "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^10.0.1",
-    "sass": "^1.29.0"
-  },
   "devDependencies": {
     "parcel": "^2.3.2"
   }

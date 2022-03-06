@@ -4,13 +4,7 @@
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch sass/style.scss css/style.css",
-    "server": "live-server",
-    "start": "npm-run-all --parallel watch server",
-    "prefix": "postcss --use autoprefixer -b 'last versions' css/style.css -o css/style.prefix.css",
-    "compress": "sass --style=compressed css/style.prefix.css css/style.min.css",
-    "build": "npm-run-all prefix compress"
+
   },
   "author": "Moody Mudiaga",
   "license": "ISC",

@@ -8,7 +8,7 @@
 		"not dead"
 	],
 	"source": [
-		"./src/js/app.js",
+		"./src/scripts/index.js",
 		"./index.html"
 	],
   "scripts": {

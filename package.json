@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "My portfolio website",
   "main": "index.js",
+	"browserslist": [
+		"> 0.2%",
+		"not dead"
+	],
+	"source": [
+		"./src/js/app.js",
+		"./index.html"
+	],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"

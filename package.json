@@ -1,18 +1,22 @@
 {
   "name": "portfolio",
   "homepage": "https://eager-bartik-e30f1f.netlify.app/",
-  "licenses": [{"license": "MIT"}],
+  "licenses": [
+    {
+      "license": "MIT"
+    }
+  ],
   "version": "1.0.0",
   "description": "My portfolio website",
-	"browserslist": [
-		"> 0.2%",
-		"not dead"
-	],
+  "browserslist": [
+    "> 0.2%",
+    "not dead"
+  ],
   "repository": "https://github.com/uwojeyamudiaga/moodymudiaga",
-	"source": [
-		"./src/scripts/index.js",
-		"./index.html"
-	],
+  "source": [
+    "./src/scripts/index.js",
+    "./index.html"
+  ],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
@@ -20,6 +24,7 @@
   "author": "Moody Mudiaga",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
     "parcel": "^2.3.2",
     "sass": "^1.49.9"
   },

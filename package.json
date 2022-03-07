@@ -1,12 +1,14 @@
 {
   "name": "portfolio",
+  "homepage": "https://eager-bartik-e30f1f.netlify.app/",
+  "licenses": [{"license": "MIT"}],
   "version": "1.0.0",
   "description": "My portfolio website",
-  "main": "index.js",
 	"browserslist": [
 		"> 0.2%",
 		"not dead"
 	],
+  "repository": "https://github.com/uwojeyamudiaga/moodymudiaga",
 	"source": [
 		"./src/scripts/index.js",
 		"./index.html"

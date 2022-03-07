@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "My portfolio website",
-  "main": "index.js",
+  "main": "index.html",
 	"browserslist": [
 		"> 0.2%",
 		"not dead"

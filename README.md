@@ -40,14 +40,14 @@ The features of the website by the pages are -
 
 The list of dependencies used in this project are :
 ```javascript
-    "autoprefixer": "^10.0.1",
-    "live-server": "^1.2.1",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.1.0",
-    "postcss-cli": "^8.1.0",
-    "sass": "^1.29.0"
+    "regenerator-runtime": "^0.13.9"
 ```
-
+As for development dependencies, I have used :
+```javascript
+    "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.3.2",
+    "sass": "^1.49.9"
+```
 <br>
 <br>
 

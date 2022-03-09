@@ -68,10 +68,10 @@ In the package.json file you will find the scripts for development and productio
 
 ## TO DO
 
-+ Add scroll animation (intersection observer)
-+ Include `parcel` as a development dependency
-+ SEO
-+ Migrate to React
-+ backend
-+ CMS
++ [] Add scroll animation (intersection observer)
++ [x] Include `parcel` as a development dependency
++ [] SEO
++ [] Migrate to React
++ [] backend
++ [] CMS
 

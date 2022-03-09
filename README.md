@@ -70,6 +70,7 @@ In the package.json file you will find the scripts for development and productio
 
 + [] Add scroll animation (intersection observer)
 + [x] Include `parcel` as a development dependency
++ [] Add a call-to-action button in the hero section
 + [] SEO
 + [] Migrate to React
 + [] backend

@@ -50,6 +50,10 @@
         &:active {
             color: $silver-chalice;
         }
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     &__attribution {

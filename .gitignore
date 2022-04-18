@@ -1,8 +1,0 @@
-# dist folder
-dist
-
-# parcel folders
-*.parcel*
-
-# node_modules
-node_modules/

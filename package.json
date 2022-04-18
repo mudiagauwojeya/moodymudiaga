@@ -8,15 +8,16 @@
   ],
   "version": "1.0.0",
   "description": "My portfolio website",
-  "browserslist": [
-    "> 0.2%",
-    "not dead"
-  ],
-  "repository": "https://github.com/uwojeyamudiaga/moodymudiaga",
-  "source": [
-    "./src/scripts/index.js",
-    "./index.html"
-  ],
+  "main": "index.html",
+	"browserslist": [
+		"> 0.2%",
+		"not dead"
+	],
+  "repository": { "repository": "https://github.com/uwojeyamudiaga/moodymudiaga"},
+	"source": [
+		"./src/scripts/index.js",
+		"./index.html"
+	],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"

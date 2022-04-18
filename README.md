@@ -1,5 +1,5 @@
 
-# MUDIAGA MOODY UWOJEYA <img src="./assets/logo.png" alt="The official logo of Mudi" width="100px">
+# MUDIAGA MOODY UWOJEYA, ESQ <img src="./assets/logo.png" alt="The official logo of Mudi" width="100px">
 
 [![](https://img.shields.io/badge/Twitter-%40moodymudiaga-9cf?style=plastic&logo=twitter&labelColor=white&logoWidth=20)](https://twitter.com/MoodyMudiaga)
 [![](https://img.shields.io/badge/LinkedIn-Mudiaga%20Moody%20Uwojeya-blue?style=plastic&logo=linkedin&labelColor=lightgrey&logoWidth=20)](https://www.linkedin.com/in/mudiaga-moody-uwojeya)

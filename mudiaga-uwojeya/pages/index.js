@@ -14,12 +14,7 @@ const Index = () => {
         back end developer, wewb developer, web development, web design, portfolio website,
         website design, web designer, website developer, website, web apps, web application Mudiaga Moody Uwojeya Nigeria"
             />
-            <title>Mudiaga Moody</title>
-
-            <link
-                href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;600&family=Petrona:wght@500;700&family=Quicksand:wght@300&display=swap"
-                rel="stylesheet"
-            />
+            <title>Mudiaga Moody Uwojeya</title>
 
             /*  external stylesheet and favicon */
             <link

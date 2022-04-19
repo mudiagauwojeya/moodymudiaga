@@ -19,7 +19,7 @@ const Index = () => {
             /*  external stylesheet and favicon */
             <link
                 rel="shortcut icon"
-                href="assets/mudi-favicon-sm.png"
+                href="../../assets/mudi-favicon-sm.png"
                 type="image/x-icon"
             />
            

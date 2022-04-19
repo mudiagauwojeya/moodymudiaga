@@ -25,10 +25,10 @@ const Index = () => {
            
         </Head>
 
-       <body class="container">
-		<!-- navigation menu -->
+       <div class="container">
+		
 		<nav class="navigation">
-			<!-- brand -->
+			// brand section
 			<div class="navigation__brand">
 				<a href="index.html" target="_self" class="navigation__home">
 					<img
@@ -112,7 +112,6 @@ const Index = () => {
 			</div>
 		</nav>
 
-		<!-- header section -->
 		<header class="header">
 			<div class="header__bg-video">
 				<video class="header__video" autoplay muted loop>
@@ -134,7 +133,6 @@ const Index = () => {
 			</div>
 		</header>
 
-		<!-- features section -->
 		<section class="feature">
 			<div class="feature__features--1">
 				<div class="feature__shape">
@@ -213,7 +211,6 @@ const Index = () => {
 			</div>
 		</section>
 
-		<!-- testimonial section -->
 		<section class="testimonial">
 			<div class="testimonial__container">
 				<div class="testimonial__customer">
@@ -278,7 +275,6 @@ const Index = () => {
 			</div>
 		</section>
 
-		<!-- contact section -->
 		<section class="contact" id="contact">
 			<form action="mailto:moody.mudiaga@gmail.com" class="contact__form">
 				<label for="#name" class="contact__label">Name</label>
@@ -314,7 +310,6 @@ const Index = () => {
 			</form>
 		</section>
 
-		<!-- footer section -->
 		<footer class="footer">
 			<ul class="footer__list">
 				<li class="footer__item">
@@ -348,7 +343,7 @@ const Index = () => {
 				All rights reserved! Mudiaga Moody Uwojeya &copy; 2020
 			</div>
 		</footer>
-	</body>
+	</div>
     </Fragment>
 }
 

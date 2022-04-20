@@ -2,64 +2,64 @@ import Link from 'next/link'
 import styles from '../../sass/layout/Navigation.module.scss';
 
 const Navigation = () => {
-    return <nav className="navigation">
+    return <nav className={styles.navigation}>
 			// brand section
-			<div className="navigation__brand">
+			<div className={styles.navigation__brand}>
                 <Link href="/" >
-                    <a target="_self" className="navigation__home">
+                    <a target="_self" className={styles.navigation__home}>
                         <img
                             src="assets/logo.png"
                             alt="mudi logo"
-                            className="navigation__logo"
+                            className={styles.navigation__logo}
                             />
                     </a>
                 </Link>
 			</div>
 
-			<input type="checkbox" className="navigation__checkbox" id="menu-toggle" />
-			<label htmlFor="menu-toggle" className="navigation__button">
-				<span className="navigation__icon"></span>
+			<input type="checkbox" className={styles.navigation__checkbox} id="menu-toggle" />
+			<label htmlFor="menu-toggle" className={styles.navigation__button}>
+				<span className={styles.navigation__icon}></span>
 			</label>
-			<div className="navigation__ball"></div>
-			<div className="navigation__menu">
-				<ul className="navigation__list">
-					<li className="navigation__item">
+			<div className={styles.navigation__ball}></div>
+			<div className={styles.navigation__menu}>
+				<ul className={styles.navigation__list}>
+					<li className={styles.navigation__item}>
                         <Link href="/" >
-						<a target="_self" className="navigation__link"
+						<a target="_self" className={styles.navigation__link}
 							>Home</a
 						>
                         </Link>
 					</li>
-					<li className="navigation__item">
+					<li className={styles.navigation__item}>
                         <Link href="/project">
 						<a
 							target="_self"
-							className="navigation__link"
+							className={styles.navigation__link}
 							>Projects</a
 						>
                         </Link>
 					</li>
-					<li className="navigation__item">
+					<li className={styles.navigation__item}>
                         <Link href="/blog" >
-						<a target="_self" className="navigation__link"
+						<a target="_self" className={styles.navigation__link}
 							>Blog</a
 						>
                         </Link>
 					</li>
-					<li className="navigation__item">
+					<li className={styles.navigation__item}>
                         <Link href="/#contact">
-						<a target="_self" className="navigation__link"
+						<a target="_self" className={styles.navigation__link}
 							>Contact</a
 						>
                         </Link>
 					</li>
 				</ul>
 
-				<div className="navigation__socials">
-					<span className="navigation__social-text">Find Me</span>
-					<div className="navigation__social-container">
-						<a href="#contact" className="navigation__social-link">
-							<svg className="navigation__social-brand">
+				<div className={styles.navigation__socials}>
+					<span className={styles.navigation__social-text}>Find Me</span>
+					<div className={styles.navigation__social-container}>
+						<a href="#contact" className={styles.navigation__social-link}>
+							<svg className={styles.navigation__social-brand}>
 								<use href="assets/sprite.svg#icon-mail_outline"></use>
 							</svg>
 						</a>
@@ -67,27 +67,27 @@ const Navigation = () => {
 						<a
 							href="https://github.com/uwojeyamudiaga/"
 							target="_blank"
-							className="navigation__social-link"
+							className={styles.navigation__social-link}
 						>
-							<svg className="navigation__social-brand">
+							<svg className={styles.navigation__social-brand}>
 								<use href="assets/sprite.svg#icon-github1"></use>
 							</svg>
 						</a>
 						<a
 							href="https://www.linkedin.com/in/mudiaga-moody-uwojeya/"
 							target="_blank"
-							className="navigation__social-link"
+							className={styles.navigation__social-link}
 						>
-							<svg className="navigation__social-brand">
+							<svg className={styles.navigation__social-brand}>
 								<use href="assets/sprite.svg#icon-linkedin"></use>
 							</svg>
 						</a>
 						<a
 							href="https://twitter.com/MoodyMudiaga/"
 							target="_blank"
-							className="navigation__social-link"
+							className={styles.navigation__social-link}
 						>
-							<svg className="navigation__social-brand">
+							<svg className={styles.navigation__social-brand}>
 								<use href="assets/sprite.svg#icon-twitter1"></use>
 							</svg>
 						</a>

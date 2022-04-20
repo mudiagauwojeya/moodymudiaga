@@ -23,27 +23,34 @@ const Navigation = () => {
 			<div className="navigation__menu">
 				<ul className="navigation__list">
 					<li className="navigation__item">
-						<a href="index.html" target="_self" className="navigation__link"
+                        <Link href="/" >
+						<a target="_self" className="navigation__link"
 							>Home</a
 						>
+                        </Link>
 					</li>
 					<li className="navigation__item">
+                        <Link href="/project">
 						<a
-							href="projects.html"
 							target="_self"
 							className="navigation__link"
 							>Projects</a
 						>
+                        </Link>
 					</li>
 					<li className="navigation__item">
-						<a href="blog.html" target="_self" className="navigation__link"
+                        <Link href="/blog" >
+						<a target="_self" className="navigation__link"
 							>Blog</a
 						>
+                        </Link>
 					</li>
 					<li className="navigation__item">
-						<a href="#contact" target="_self" className="navigation__link"
+                        <Link href="/#contact">
+						<a target="_self" className="navigation__link"
 							>Contact</a
 						>
+                        </Link>
 					</li>
 				</ul>
 

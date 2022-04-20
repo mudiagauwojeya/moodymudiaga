@@ -40,7 +40,7 @@ const Index = () => {
 			</div>
 
 			<input type="checkbox" className="navigation__checkbox" id="menu-toggle" />
-			<label for="menu-toggle" className="navigation__button">
+			<label htmlFor="menu-toggle" className="navigation__button">
 				<span className="navigation__icon"></span>
 			</label>
 			<div className="navigation__ball"></div>
@@ -277,7 +277,7 @@ const Index = () => {
 
 		<section className="contact" id="contact">
 			<form action="mailto:moody.mudiaga@gmail.com" className="contact__form">
-				<label for="#name" className="contact__label">Name</label>
+				<label htmlFor="#name" className="contact__label">Name</label>
 				<input
 					type="text"
 					id="name"
@@ -295,7 +295,7 @@ const Index = () => {
 					required
 				/>
 
-				<label for="#message" className="contact__label">Message</label>
+				<label htmlFor="#message" className="contact__label">Message</label>
 				<textarea
 					name="message"
 					id="message"

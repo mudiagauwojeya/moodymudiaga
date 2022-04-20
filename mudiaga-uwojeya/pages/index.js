@@ -287,7 +287,7 @@ const Index = () => {
 					required
 				/>
 
-				<label for="#mail" className="contact__label">Email</label>
+				<label htmlFor="#mail" className="contact__label">Email</label>
 				<input
 					type="email"
 					id="mail"

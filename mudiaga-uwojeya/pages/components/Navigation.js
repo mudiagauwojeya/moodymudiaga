@@ -1,9 +1,7 @@
-import { Fragment } from "react"
 import Link from 'next/link'
 
 const Navigation = () => {
-    return <Fragment>
-        <nav className="navigation">
+    return <nav className="navigation">
 			// brand section
 			<div className="navigation__brand">
 				<a href="index.html" target="_self" className="navigation__home">
@@ -94,7 +92,6 @@ const Navigation = () => {
 				</div>
 			</div>
 		</nav>
-    </Fragment>
 }
 
 export default Navigation;

@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 
 const Navigation = () => {
-    return <>
+    return <Fragment>
         <nav className="navigation">
 			// brand section
 			<div className="navigation__brand">
@@ -86,7 +86,7 @@ const Navigation = () => {
 				</div>
 			</div>
 		</nav>
-    </>
+    </Fragment>
 }
 
 export default Navigation;

@@ -28,7 +28,7 @@ const Index = () => {
         </Head>
 
        <div className="container">
-		
+		<Navigation />
 		
 
 		<header className="header">

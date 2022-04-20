@@ -297,7 +297,7 @@
         }
     }
 
-    &__social-container {
+    &__socialContainer {
 
         @include breakpoint(43.75em) {
             background-color: $red-light;
@@ -309,7 +309,7 @@
 
     }
 
-    &__social-text {
+    &__socialText {
         border-top: 1px solid $silver-chalice;
         color: $white;
         cursor: pointer;
@@ -325,7 +325,7 @@
         }
     }
 
-    &__social-link {
+    &__socialLink {
 
         &:link,
         &:active,
@@ -350,7 +350,7 @@
         }
     }
 
-    &__social-brand {
+    &__socialBrand {
         fill: $silver-chalice;
         height: 2rem;
         width: 2rem;

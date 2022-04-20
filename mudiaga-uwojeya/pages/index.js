@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Fragment } from 'react';
+import  '../sass/component/index.scss';
 
 const Index = () => {
     return <Fragment>

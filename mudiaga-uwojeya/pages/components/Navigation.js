@@ -3,13 +3,12 @@ import styles from '../../sass/layout/Navigation.module.scss';
 
 const Navigation = () => {
     return <nav className={styles.navigation}>
-			// brand section
 			<div className={styles.navigation__brand}>
                 <Link href="/" >
                     <a target="_self" className={styles.navigation__home}>
                         <img
                             src="assets/logo.png"
-                            alt="mudi logo"
+                            alt="mudi official logo"
                             className={styles.navigation__logo}
                             />
                     </a>

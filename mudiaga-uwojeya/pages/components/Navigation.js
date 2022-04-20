@@ -4,13 +4,15 @@ const Navigation = () => {
     return <nav className="navigation">
 			// brand section
 			<div className="navigation__brand">
-				<a href="index.html" target="_self" className="navigation__home">
-					<img
-						src="assets/logo.png"
-						alt="mudi logo"
-						className="navigation__logo"
-					/>
-				</a>
+                <Link href="/" >
+                    <a target="_self" className="navigation__home">
+                        <img
+                            src="assets/logo.png"
+                            alt="mudi logo"
+                            className="navigation__logo"
+                            />
+                    </a>
+                </Link>
 			</div>
 
 			<input type="checkbox" className="navigation__checkbox" id="menu-toggle" />

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import styles from '../../sass/layout/Navigation.module.scss';
 
 const Navigation = () => {
     return <nav className="navigation">

@@ -114,7 +114,7 @@ const Index = () => {
 
 		<header className="header">
 			<div className="header__bg-video">
-				<video className="header__video" autoplay muted loop>
+				<video className="header__video" autoPlay muted loop>
 					<source src="assets/laptop.mp4" type="video/mp4" />
 					Your current browser does not support video, please upgrade your
 					browser.

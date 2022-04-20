@@ -25,23 +25,6 @@ body {
     line-height: 1.5;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: 7rem 90vh repeat(4, max-content);
-
-     @include breakpoint(37.5em) {
-         grid-template-rows: 7rem 70vh repeat(4, max-content);
-     }
-
-     @include breakpoint(43.75em) {
-         grid-template-rows: 70vh repeat(4, max-content);
-     }
-
-     @include breakpoint(56.25em) {
-         grid-template-rows: 100vh repeat(4, max-content);
-     }
-}
-
 ::selection {
     background-color: $crimson;
 }

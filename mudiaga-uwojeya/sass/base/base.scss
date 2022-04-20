@@ -1,0 +1,30 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;600&family=Petrona:wght@500;700&family=Quicksand:wght@300&display=swap");
+
+:root {
+    color: $cultured;
+    font-size: 62.5%;
+    --text: 'Commissioner', sans-serif;
+    --heading: 'Petrona', serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $red-light;
+    font-family: var(--text);
+    font-size: 1.7rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+::selection {
+    background-color: $crimson;
+}

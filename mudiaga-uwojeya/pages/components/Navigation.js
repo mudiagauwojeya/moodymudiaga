@@ -56,10 +56,10 @@ const Navigation = () => {
 				</ul>
 
 				<div className={styles.navigation__socials}>
-					<span className={styles.navigation__social-text}>Find Me</span>
-					<div className={styles.navigation__social-container}>
-						<a href="#contact" className={styles.navigation__social-link}>
-							<svg className={styles.navigation__social-brand}>
+					<span className={styles.navigation__socialText}>Find Me</span>
+					<div className={styles.navigation__socialContainer}>
+						<a href="#contact" className={styles.navigation__socialLink}>
+							<svg className={styles.navigation__socialBrand}>
 								<use href="assets/sprite.svg#icon-mail_outline"></use>
 							</svg>
 						</a>
@@ -67,27 +67,27 @@ const Navigation = () => {
 						<a
 							href="https://github.com/uwojeyamudiaga/"
 							target="_blank"
-							className={styles.navigation__social-link}
+							className={styles.navigation__socialLink}
 						>
-							<svg className={styles.navigation__social-brand}>
+							<svg className={styles.navigation__socialBrand}>
 								<use href="assets/sprite.svg#icon-github1"></use>
 							</svg>
 						</a>
 						<a
 							href="https://www.linkedin.com/in/mudiaga-moody-uwojeya/"
 							target="_blank"
-							className={styles.navigation__social-link}
+							className={styles.navigation__socialLink}
 						>
-							<svg className={styles.navigation__social-brand}>
+							<svg className={styles.navigation__socialBrand}>
 								<use href="assets/sprite.svg#icon-linkedin"></use>
 							</svg>
 						</a>
 						<a
 							href="https://twitter.com/MoodyMudiaga/"
 							target="_blank"
-							className={styles.navigation__social-link}
+							className={styles.navigation__socialLink}
 						>
-							<svg className={styles.navigation__social-brand}>
+							<svg className={styles.navigation__socialBrand}>
 								<use href="assets/sprite.svg#icon-twitter1"></use>
 							</svg>
 						</a>

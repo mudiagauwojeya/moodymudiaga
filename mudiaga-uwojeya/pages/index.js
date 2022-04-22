@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Fragment } from 'react';
 import Navigation from './components/Navigation';
+import Hero from './components/Hero';
 import  styles from '../sass/component/index.module.scss';
 
 const Index = () => {

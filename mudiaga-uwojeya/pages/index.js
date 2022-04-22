@@ -31,6 +31,7 @@ const Index = () => {
        <div className={styles.container}>
 		<Navigation />
 		
+		<Hero />
 
 		<section className="feature">
 			<div className="feature__features--1">

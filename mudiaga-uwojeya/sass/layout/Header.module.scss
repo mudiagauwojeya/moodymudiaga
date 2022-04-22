@@ -1,3 +1,5 @@
+@import "../abstract/variables.scss";
+
 .header {
     background-color: $burgundy;
     clip-path: polygon(0 0, 100% 0, 100% 96%, 50% 100%, 0 96%);

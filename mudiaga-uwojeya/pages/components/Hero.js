@@ -13,7 +13,7 @@ const Hero = () => {
 				</video>
 			</div>
 			<div className={styles.header__content}>
-				<h1 className="heading-primary">Grow your business</h1>
+				<h1 className={styles.headingPrimary}>Grow your business</h1>
 				<p className={styles.header__paragraph}>
 					get seen by the people looking for your products or services on
 					the internet, drive them to your website and convert them. It is

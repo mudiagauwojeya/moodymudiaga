@@ -7,7 +7,7 @@ const Hero = () => {
         <header className={styles.header}>
 			<div className={styles.header__bgVideo}>
 				<video className={styles.header__video} autoPlay muted loop>
-					<source src="assets/laptop.mp4" type="video/mp4" />
+					<source src="/laptop.mp4" type="video/mp4" />
 					Your current browser does not support video, please upgrade your
 					browser.
 				</video>
@@ -20,7 +20,7 @@ const Hero = () => {
 					as simple as ...
 				</p>
 				<svg className={styles.header__chevron}>
-					<use href="assets/sprite.svg#icon-keyboard_arrow_down"></use>
+					<use href="/sprite.svg#icon-keyboard_arrow_down"></use>
 				</svg>
 			</div>
 		</header>

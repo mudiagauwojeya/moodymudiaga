@@ -61,7 +61,7 @@ const Navigation = () => {
 					<div className={styles.navigation__socialContainer}>
 						<a href="#contact" className={styles.navigation__socialLink}>
 							<svg className={styles.navigation__socialBrand}>
-								<use href="assets/sprite.svg#icon-mail_outline"></use>
+								<use href="/sprite.svg#icon-mail_outline"></use>
 							</svg>
 						</a>
 
@@ -71,7 +71,7 @@ const Navigation = () => {
 							className={styles.navigation__socialLink}
 						>
 							<svg className={styles.navigation__socialBrand}>
-								<use href="assets/sprite.svg#icon-github1"></use>
+								<use href="/sprite.svg#icon-github1"></use>
 							</svg>
 						</a>
 						<a
@@ -80,7 +80,7 @@ const Navigation = () => {
 							className={styles.navigation__socialLink}
 						>
 							<svg className={styles.navigation__socialBrand}>
-								<use href="assets/sprite.svg#icon-linkedin"></use>
+								<use href="/sprite.svg#icon-linkedin"></use>
 							</svg>
 						</a>
 						<a
@@ -89,7 +89,7 @@ const Navigation = () => {
 							className={styles.navigation__socialLink}
 						>
 							<svg className={styles.navigation__socialBrand}>
-								<use href="assets/sprite.svg#icon-twitter1"></use>
+								<use href="/sprite.svg#icon-twitter1"></use>
 							</svg>
 						</a>
 					</div>

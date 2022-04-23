@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../../sass/layout/Navigation.module.scss';
+import styles from '../../sass/layout/Navigation.module.scss'
+import logo from '../../public/logo.png'
 
 const Navigation = () => {
     return <nav className={styles.navigation}>
@@ -8,7 +9,7 @@ const Navigation = () => {
                 <Link href="/" >
                     <a target="_self" className={styles.navigation__home}>
                         <Image
-							src="/logo.png"
+							src={logo}
                             alt="mudi official logo"
                             className={styles.navigation__logo}
 						/>

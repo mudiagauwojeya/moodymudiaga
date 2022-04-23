@@ -19,7 +19,6 @@ const Index = () => {
             />
             <title>Mudiaga Moody Uwojeya</title>
 
-            /*  external stylesheet and favicon */
             <link
                 rel="shortcut icon"
                 href="/mudi-favicon-sm.png"

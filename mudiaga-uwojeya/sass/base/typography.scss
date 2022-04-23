@@ -9,7 +9,7 @@
     text-transform: uppercase;
 }
 
-.heading-primary {
+.headingPrimary {
     @extend .heading;
     font-size: 4.5rem;
 
@@ -18,13 +18,13 @@
     }
 }
 
-.heading-secondary {
+.headingSecondary {
     @extend .heading;
     font-size: 2.3rem;
     padding-top: 1rem;
 }
 
-.heading-tertiary {
+.headingTertiary {
     @extend .heading;
     font-size: 1.8rem;
     text-transform: capitalize;

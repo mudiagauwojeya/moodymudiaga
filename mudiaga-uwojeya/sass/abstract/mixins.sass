@@ -7,16 +7,15 @@
 //900px == 56.25em
 //1034 == 64.625em
 
-@mixin breakpoint($size) {
-    @media only screen and (min-width: $size) {
-        @content;
-    }
-}
+@mixin breakpoint($size) 
+    @media only screen and (min-width: $size) 
+        @content
+    
+
 
 //POSITION CENTER
-@mixin positioned {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+@mixin positioned 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)

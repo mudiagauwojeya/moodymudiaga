@@ -7,14 +7,14 @@
 
 ## OVERVIEW
 
-This website will serve as my portfolio website. However, rather than the typical portfolio website, I will use it to advertise my services as a freelance frontend developer. The technologies I am using are - `HTML`, `CSS`, `Sass/Scss` and `JavaScript` in a nodejs environment.
+This website will serve as my portfolio website. However, rather than just the typical resume portfolio website, I will use it as a freelance fullstack developer. The technologies I am using are - `HTML`, `CSS`, `Sass/Scss`, `JavaScript`, `Nextjs`, and `Reactjs`.
 
 <br>
 <br>
 
 ## PAGES
 
-This website will have three pages, namely: Home, Projects, and Blog. The Home page will serve as the index or entry-point to the website. It will be more lengthy because it will sell me as a freelance frontend developer. The Project page as the name implies is meant to display completed and ongoing projects. Finally, the Blog page will serve as a blog when I integrate backend.
+This website has three pages, namely: Home, Projects, and Blog. The Home page serve as the index or entry-point to the website to introduce myself and services. The Project page as the name implies is meant to display completed and ongoing projects, that I worked on or contributed to. Finally, the Blog page will serve as a blog when I integrate backend.
 
 <br>
 <br>
@@ -40,13 +40,15 @@ The features of the website by the pages are -
 
 The list of dependencies used in this project are :
 ```javascript
-    "regenerator-runtime": "^0.13.9"
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
 ```
 As for development dependencies, I have used :
 ```javascript
-    "@parcel/transformer-sass": "^2.3.2",
-    "parcel": "^2.3.2",
-    "sass": "^1.49.9"
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5",
+    "sass": "^1.50.0"
 ```
 <br>
 <br>
@@ -58,8 +60,9 @@ As for development dependencies, I have used :
     - navigate to the location you want to create the project in (eg - home or c:/)
     - enter the command `git clone https:/github.com/uwojeyamudiaga/moodymudiaga`. Alternatively, you can provide the name of the folder you want git to clone the project to with `git clone https:/github.io/uwojeyamudiaga/moodymudiaga <name-of-folder>`
     - `cd` into the moodymudiaga folder
-    - Run `npm install`
-    - Run `npm start`
+    - `cd` into the mudiaga-uwojeya folder
+    - Run `yarn` or `npm install`
+    - Run `yarn dev` or `npm run dev`
 
 In the package.json file you will find the scripts for development and production. To be sure, for production build run `npm run build`.
 

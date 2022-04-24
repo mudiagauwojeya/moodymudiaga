@@ -1,362 +1,302 @@
-@import "../abstract/variables";
-@import "../abstract/mixins";
+@import "../abstract/variables"
+@import "../abstract/mixins"
 
-.navigation {
-    background-color: $persian-plum;
-    padding-bottom: 1.8rem;
-    position: relative;
-    z-index: 100;
+.navigation 
+    background-color: $persian-plum
+    padding-bottom: 1.8rem
+    position: relative
+    z-index: 100
 
-    display: flex;
-    align-items: flex-end;
-    align-content: center;
+    display: flex
+    align-items: flex-end
+    align-content: center
 
-    @include breakpoint(43.75em) {
-        background-color: $red-light;
-        padding-bottom: 0;
-        position: fixed;
-        width: 100%;
+    @include breakpoint(43.75em) 
+        background-color: $red-light
+        padding-bottom: 0
+        position: fixed
+        width: 100%
 
-        align-items: center;
-    }
+        align-items: center
+    
+    &__brand 
+        cursor: pointer
+        display: inline-block
+        margin-left: 2.5rem
+        width: 15rem
 
-    &__brand {
-        cursor: pointer;
-        display: inline-block;
-        margin-left: 2.5rem;
-        width: 15rem;
+        display: flex
+        align-items: center
 
-        display: flex;
-        align-items: center;
+        @include breakpoint(28.125em) 
+            margin-left: 6rem
+        
+        @include breakpoint(37.5em) 
+            margin-left: 8rem
+    
+        @include breakpoint(56.25em) 
+            margin-left: 12rem
+        
+    &__logo 
+        display: block
+        width: 100%
+        max-width: 10rem
+    
+    &__checkbox 
+        display: none
+    
+    &__button 
+        background-color: $cultured
+        box-shadow: 0 .5rem 1.5rem rgba($light-gray, .5)
+        border-radius: 50%
+        position: fixed
+        top: 1.8rem
+        right: 1.3rem
+        width: 5rem
+        height: 5rem
+        z-index: 50
 
-        @include breakpoint(28.125em) {
-            margin-left: 6rem;
-        }
+        @include breakpoint(43.75em) 
+            display: none
+        
+    &__ball 
+        background-image: radial-gradient($crimson 45%, $red-light 55%)
+        border-radius: 50%
+        height: 5rem
+        width: 5rem
+        position: fixed
+        top: 1.8rem
+        right: 1.3rem
+        transition: transform .3s ease-out
 
-        @include breakpoint(37.5em) {
-            margin-left: 8rem;
-        }
+        @include breakpoint(43.75em) 
+            display: none
+        
+    &__menu 
+        opacity: 0
+        position: fixed
+        transform: translateX(-100%)
+        width: 0
+        z-index: 150
 
-        @include breakpoint(56.25em) {
-            margin-left: 12rem;
-        }
+        @include breakpoint(43.75em) 
+            display: flex
+            flex-flow: row nowrap
+            align-content: center
+            justify-content: space-around
 
-    }
+            opacity: 1
+            position: static
+            transform: translateX(0)
+            width: 100%
+            height: 100%
+        
+        @include breakpoint(56.25em) 
+            justify-content: flex-end
+        
+    &__list 
+        @include positioned
+        font-size: 2rem
+        list-style-type: none
+        transform: translate(-250%, 20%)
+        transition: transform 400ms ease-out
 
-    &__logo {
-        display: block;
-        width: 100%;
-        max-width: 10rem;
-    }
+        @include breakpoint(43.75em) 
+            display: block
+            flex: 0 1 50%
+            margin-top: 0
+            position: static
+            transform: translate(0, 0)
 
-    &__checkbox {
-        display: none;
-    }
+            display: flex
+            align-items: center
+            font-size: 1.8rem
 
-    &__button {
-        background-color: $cultured;
-        box-shadow: 0 .5rem 1.5rem rgba($light-gray, .5);
-        border-radius: 50%;
-        position: fixed;
-        top: 1.8rem;
-        right: 1.3rem;
-        width: 5rem;
-        height: 5rem;
-        z-index: 50;
+        @include breakpoint(56.25em) 
+            font-size: 2rem
+    
+    &__item 
+        font-weight: 600
+        letter-spacing: .2rem
 
-        @include breakpoint(43.75em) {
-            display: none;
-        }
-    }
+        @include breakpoint(43.75em) 
+            display: inline-block
+    
+    &__home 
+        color: none
+        text-decoration: none
+    
+    &__link 
+        &:link 
+            color: $white
+            cursor: pointer
+            display: inline-block
+            padding: 2rem
+            text-decoration: none
+            width: 100%
 
-    &__ball {
-        background-image: radial-gradient($crimson 45%, $red-light 55%);
-        border-radius: 50%;
-        height: 5rem;
-        width: 5rem;
-        position: fixed;
-        top: 1.8rem;
-        right: 1.3rem;
-        transition: transform .3s ease-out;
-
-        @include breakpoint(43.75em) {
-            display: none;
-        }
-    }
-
-    &__menu {
-        opacity: 0;
-        position: fixed;
-        transform: translateX(-100%);
-        width: 0;
-        z-index: 150;
-
-        @include breakpoint(43.75em) {
-            display: flex;
-            flex-flow: row nowrap;
-            align-content: center;
-            justify-content: space-around;
-
-            opacity: 1;
-            position: static;
-            transform: translateX(0);
-            width: 100%;
-            height: 100%;
-        }
-
-        @include breakpoint(56.25em) {
-            justify-content: flex-end;
-        }
-    }
-
-    &__list {
-        @include positioned;
-        font-size: 2rem;
-        list-style-type: none;
-        transform: translate(-250%, 20%);
-        transition: transform 400ms ease-out;
-
-        @include breakpoint(43.75em) {
-            display: block;
-            flex: 0 1 50%;
-            margin-top: 0;
-            position: static;
-            transform: translate(0, 0);
-
-            display: flex;
-            align-items: center;
-            font-size: 1.8rem;
-        }
-
-        @include breakpoint(56.25em) {
-            font-size: 2rem;
-        }
-    }
-
-    &__item {
-        font-weight: 600;
-        letter-spacing: .2rem;
-
-        @include breakpoint(43.75em) {
-            display: inline-block;
-        }
-    }
-
-    &__home {
-        color: none;
-        text-decoration: none;
-    }
-
-    &__link {
-        &:link {
-            color: $white;
-            cursor: pointer;
-            display: inline-block;
-            padding: 2rem;
-            text-decoration: none;
-            width: 100%;
-
-            @include breakpoint(43.75em) {
-                font-size: 1.8rem;
-                padding: 2rem 2.5rem;
-            }
-        }
+            @include breakpoint(43.75em) 
+                font-size: 1.8rem
+                padding: 2rem 2.5rem
+        
 
         &:active,
-        &:visited {
-            color: $silver-chalice;
+        &:visited 
+            color: $silver-chalice
 
-            @include breakpoint(43.75em) {
-                color: $crimson;
-            }
-        }
-
-        &:hover {
-            background-color: $persian-plum;
-            color: $white;
-        }
-    }
-
-    &__icon {
+            @include breakpoint(43.75em) 
+                color: $crimson
+    
+        &:hover 
+            background-color: $persian-plum
+            color: $white
+        
+    &__icon 
 
         &,
         &::after,
-        &::before {
-            background-color: $crimson;
-            cursor: pointer;
-            display: inline-block;
-            height: 2px;
-            width: 3rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 100;
+        &::before 
+            background-color: $crimson
+            cursor: pointer
+            display: inline-block
+            height: 2px
+            width: 3rem
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 100
 
-            @include breakpoint(43.75em) {
-                display: none;
-            }
-        }
-
+            @include breakpoint(43.75em) 
+                display: none
+            
         &::after,
-        &::before {
-            content: "";
-            position: absolute;
-            transition: all .4s ease-out;
-            transform-origin: center;
+        &::before 
+            content: ""
+            position: absolute
+            transition: all .4s ease-out
+            transform-origin: center
 
-            @include breakpoint(43.75em) {
-                display: none;
-            }
-        }
+            @include breakpoint(43.75em) 
+                display: none
+            
+        &::before 
+            top: -.5rem
 
-        &::before {
-            top: -.5rem;
-        }
-
-        &::after {
-            top: .7rem;
-        }
-    }
+        &::after 
+            top: .7rem
 
     //navigation button onclick behaviour
 
-    &__checkbox:checked~&__ball {
-        transform: scale(50);
+    &__checkbox:checked~&__ball 
+        transform: scale(50)
 
-        @include breakpoint(43.75em) {
-            display: none;
-        }
-    }
+        @include breakpoint(43.75em) 
+            display: none
+        
+    &__checkbox:checked~&__menu 
+        opacity: 1
+        transform: translateX(0)
+        width: 100%
+        z-index: 100
 
-    &__checkbox:checked~&__menu {
-        opacity: 1;
-        transform: translateX(0);
-        width: 100%;
-        z-index: 100;
+        @include breakpoint(43.75em) 
+            display: none
+        
+    &__checkbox:checked~&__menu>&__list 
+        transform: translate(-50%, 20%)
 
-        @include breakpoint(43.75em) {
-            display: none;
-        }
-    }
+        @include breakpoint(43.75em) 
+            display: none
 
-    &__checkbox:checked~&__menu>&__list {
-        transform: translate(-50%, 20%);
+    &__checkbox:checked~&__menu>&__socials 
+        transform: translate(-50%, 0)
 
-        @include breakpoint(43.75em) {
-            display: none;
-        }
-    }
+        @include breakpoint(43.75em) 
+            display: none
 
-    &__checkbox:checked~&__menu>&__socials {
-        transform: translate(-50%, 0);
+    &__checkbox:checked+&__button &__icon 
+        background-color: transparent
+    
+    &__checkbox:checked+&__button &__icon:before 
+        top: 0
+        left: 0
+        transform: rotate(-135deg)
 
-        @include breakpoint(43.75em) {
-            display: none;
-        }
-    }
+    &__checkbox:checked+&__button &__icon:after 
+        top: 0
+        left: 0
+        transform: rotate(135deg)
+    
+    &__socials 
+        @include positioned
+        list-style-type: none
+        margin-top: 42rem
+        text-align: center
+        transform: translate(-150%, 0)
+        width: 70%
 
-    &__checkbox:checked+&__button &__icon {
-        background-color: transparent;
-    }
+        @include breakpoint(43.75em) 
+            flex: 0 1 20%
+            margin-top: 0
+            position: static
+            transform: translate(0, 0)
 
-    &__checkbox:checked+&__button &__icon:before {
-        top: 0;
-        left: 0;
-        transform: rotate(-135deg);
-    }
+            display: flex
+            align-items: center
+            flex-direction: column
+        
+        &:hover>.navigation__socialContainer 
+            cursor: pointer
+            display: block
+        
+    &__socialContainer 
 
-    &__checkbox:checked+&__button &__icon:after {
-        top: 0;
-        left: 0;
-        transform: rotate(135deg);
-    }
+        @include breakpoint(43.75em) 
+            background-color: $red-light
+            display: none
+            position: absolute
+            top: 6.7rem
+            width: 100%
+        
+    &__socialText 
+        border-top: 1px solid $silver-chalice
+        color: $white
+        cursor: pointer
+        display: block
+        margin: 0 auto
+        max-width: 30rem
+        padding: 2rem 0
+        text-align: center
 
-    &__socials {
-        @include positioned;
-        list-style-type: none;
-        margin-top: 42rem;
-        text-align: center;
-        transform: translate(-150%, 0);
-        width: 70%;
-
-        @include breakpoint(43.75em) {
-            flex: 0 1 20%;
-            margin-top: 0;
-            position: static;
-            transform: translate(0, 0);
-
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        &:hover>.navigation__socialContainer {
-            cursor: pointer;
-            display: block;
-        }
-    }
-
-    &__socialContainer {
-
-        @include breakpoint(43.75em) {
-            background-color: $red-light;
-            display: none;
-            position: absolute;
-            top: 6.7rem;
-            width: 100%;
-        }
-
-    }
-
-    &__socialText {
-        border-top: 1px solid $silver-chalice;
-        color: $white;
-        cursor: pointer;
-        display: block;
-        margin: 0 auto;
-        max-width: 30rem;
-        padding: 2rem 0;
-        text-align: center;
-
-        @include breakpoint(43.75em) {
-            border: none;
-            display: inline-block;
-        }
-    }
-
-    &__socialLink {
+        @include breakpoint(43.75em) 
+            border: none
+            display: inline-block
+    
+    &__socialLink 
 
         &:link,
         &:active,
-        &:visited {
-            cursor: pointer;
-            display: inline-block;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            transition: background-color 200ms ease-in;
+        &:visited 
+            cursor: pointer
+            display: inline-block
+            padding: 1rem 2rem
+            text-decoration: none
+            transition: background-color 200ms ease-in
 
-            @include breakpoint(28.125em) {
-                padding: 1rem 3rem;
-            }
-        }
+            @include breakpoint(28.125em) 
+                padding: 1rem 3rem
+        
+        &:hover 
+            background-color: $persian-plum
+    
+        @include breakpoint(43.75em) 
+            width: 100%
+    
+    &__socialBrand 
+        fill: $silver-chalice
+        height: 2rem
+        width: 2rem
 
-        &:hover {
-            background-color: $persian-plum;
-        }
-
-        @include breakpoint(43.75em) {
-            width: 100%;
-        }
-    }
-
-    &__socialBrand {
-        fill: $silver-chalice;
-        height: 2rem;
-        width: 2rem;
-
-        @include breakpoint(43.75em) {
-            fill: $cultured;
-        }
-    }
-}
+        @include breakpoint(43.75em) 
+            fill: $cultured

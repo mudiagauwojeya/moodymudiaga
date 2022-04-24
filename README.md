@@ -7,7 +7,7 @@
 
 ## OVERVIEW
 
-This website will serve as my portfolio website. However, rather than just the typical resume portfolio website, I will use it as a freelance fullstack developer. The technologies I am using are - `HTML`, `CSS`, `Sass/Scss`, `JavaScript`, `Nextjs`, and `Reactjs`.
+This website will serve as my portfolio website. However, rather than just the typical resume portfolio website, I will use it as a freelance fullstack developer. The technologies I am using are - `HTML`, `CSS`, `Sass/Scss`, `JavaScript`, `Nextjs`, `Reactjs` and `Nodejs`.
 
 <br>
 <br>

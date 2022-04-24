@@ -1,4 +1,4 @@
-import '../sass/base/base.scss'
+import '../sass/base/base.sass'
 
 function App({ Component, pageProps }) {
   return <Component {...pageProps} />

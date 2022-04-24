@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../../sass/layout/Navigation.module.scss'
+import styles from '../../sass/layout/Navigation.module.sass'
 import logo from '../../public/logo.png'
 
 const Navigation = () => {

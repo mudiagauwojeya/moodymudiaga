@@ -8,11 +8,11 @@ const Features = () => {
 			<div className={styles.feature__features1}>
 				<div className={styles.feature__shape}>
 					<svg className={styles.feature__item}>
-						<use href="assets/sprite.svg#icon-public"></use>
+						<use href="/sprite.svg#icon-public"></use>
 					</svg>
 
 					<svg className={styles.feature__item1}>
-						<use href="assets/sprite.svg#icon-where_to_vote"></use>
+						<use href="/sprite.svg#icon-where_to_vote"></use>
 					</svg>
 				</div>
 				<div className={styles.feature__description}>
@@ -29,7 +29,7 @@ const Features = () => {
 			<div className={styles.feature__features2}>
 				<div className={styles.feature__shape}>
 					<svg className={styles.feature__item}>
-						<use href="assets/sprite.svg#icon-bolt"></use>
+						<use href="/sprite.svg#icon-bolt"></use>
 					</svg>
 				</div>
 				<div className={styles.feature__description}>
@@ -44,13 +44,13 @@ const Features = () => {
 			<div className={styles.feature__features3}>
 				<div className={styles.feature__shape}>
 					<svg className={styles.feature__item}>
-						<use href="assets/sprite.svg#icon-laptop_windows"></use>
+						<use href="/sprite.svg#icon-laptop_windows"></use>
 					</svg>
 					<svg className={styles.feature__item2}>
-						<use href="assets/sprite.svg#icon-tablet"></use>
+						<use href="/sprite.svg#icon-tablet"></use>
 					</svg>
 					<svg className={styles.feature__item3}>
-						<use href="assets/sprite.svg#icon-phone_android"></use>
+						<use href="/sprite.svg#icon-phone_android"></use>
 					</svg>
 				</div>
 				<div className={styles.feature__description}>
@@ -67,7 +67,7 @@ const Features = () => {
 			<div className={styles.feature__features4}>
 				<div className={styles.feature__shape}>
 					<svg className={styles.feature__item}>
-						<use href="assets/sprite.svg#icon-accessible"></use>
+						<use href="/sprite.svg#icon-accessible"></use>
 					</svg>
 				</div>
 				<div className={styles.feature__description}>

@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import  styles from '../sass/component/index.module.sass';
+import  styles from '../sass/component/Index.module.sass';
 
 const Index = () => {
     return <Fragment>

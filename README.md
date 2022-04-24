@@ -64,18 +64,19 @@ As for development dependencies, I have used :
     - Run `yarn` or `npm install`
     - Run `yarn dev` or `npm run dev`
 
-In the package.json file you will find the scripts for development and production. To be sure, for production build run `npm run build`.
+In the package.json file you will find the scripts for development and production.
 
 <br>
 <br>
 
 ## TO DO
 
-+ [] Add scroll animation (intersection observer)
 + [x] Include `parcel` as a development dependency
++ [] Migrate to React
++ [] Add scroll animation (intersection observer)
 + [] Add a call-to-action button in the hero section
 + [] SEO
-+ [] Migrate to React
 + [] backend
++ [] Handle form submission on the backend
 + [] CMS
 

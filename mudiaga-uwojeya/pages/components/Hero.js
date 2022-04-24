@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import styles from "../../sass/layout/Header.module.scss";
+import styles from "../../sass/layout/Header.module.sass";
 
 const Hero = () => {
 

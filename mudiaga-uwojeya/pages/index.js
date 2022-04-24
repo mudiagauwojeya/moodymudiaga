@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Fragment } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
+import Features from './components/Features';
 import  styles from '../sass/component/index.module.scss';
 
 const Index = () => {
@@ -31,6 +32,8 @@ const Index = () => {
 		<Navigation />
 		
 		<Hero />
+
+		<Features />
 
 		<section className="testimonial">
 			<div className="testimonial__container">

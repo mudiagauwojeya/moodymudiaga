@@ -8,7 +8,7 @@ const Testimonial = () => {
 				<div className={styles.testimonial__customer}>
 					<div className={styles.testimonial__info}>
 						<svg className={styles.testimonial__icon}>
-							<use href="assets/sprite.svg#icon-account_circle"></use>
+							<use href="/sprite.svg#icon-account_circle"></use>
 						</svg>
 						<div className={styles.testimonial__profile}>
 							<h4 className={styles.headingTertiary}>Augustine Edward</h4>
@@ -28,7 +28,7 @@ const Testimonial = () => {
 				<div className={[styles.testimonial__customer, styles.testimonial__customer1]}>
 					<div className={[styles.testimonial__info, styles.testimonial__info1]}>
 						<svg className={styles.testimonial__icon}>
-							<use href="assets/sprite.svg#icon-account_circle"></use>
+							<use href="/sprite.svg#icon-account_circle"></use>
 						</svg>
 						<div className={[styles.testimonial__profile, styles.testimonial__profile1]}>
 							<h4 className={styles.headingTertiary}>Naomi Fresh</h4>
@@ -48,7 +48,7 @@ const Testimonial = () => {
 				<div className={styles.testimonial__customer}>
 					<div className={styles.testimonial__info}>
 						<svg className={styles.testimonial__icon}>
-							<use href="assets/sprite.svg#icon-account_circle"></use>
+							<use href="/sprite.svg#icon-account_circle"></use>
 						</svg>
 						<div className={styles.testimonial__profile}>
 							<h4 className={styles.headingTertiary}>Stewart O. Egedegbe Esq</h4>

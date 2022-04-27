@@ -4,8 +4,8 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Testimonial from './components/Testimonial';
-import  styles from '../sass/component/Index.module.sass';
 import Contact from './components/Contact';
+import  styles from '../sass/component/Index.module.scss';
 
 const Index = () => {
     return <Fragment>

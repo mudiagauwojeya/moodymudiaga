@@ -18,8 +18,8 @@
     }
     
     @include breakpoint(43.75em) {
-        clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%)
-        margin-top: 6.5rem
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
+        margin-top: 6.5rem;
         padding: 0 8rem;
     }
 

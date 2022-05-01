@@ -25,11 +25,11 @@ const Footer = () => {
 			</ul>
 			<ul className={styles.footer__list}>
 				<li className={styles.footer__attribution}>
-					SVG icons from
+					SVG icons from &nbsp;
 					<a href="https://icomoon.io/" className={styles.footer__link}>IcoMoon</a>
 				</li>
 				<li className={styles.footer__attribution}>
-					Cover video from
+					Cover video from &nbsp;
 					<a href="https://coverr.co/" className={styles.footer__link}>Coverr</a>
 				</li>
 			</ul>

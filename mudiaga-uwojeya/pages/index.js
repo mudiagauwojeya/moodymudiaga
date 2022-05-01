@@ -6,6 +6,7 @@ import Features from './components/Features';
 import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
 import  styles from '../sass/component/Index.module.scss';
+import Footer from './components/Footer';
 
 const Index = () => {
     return <Fragment>
@@ -41,39 +42,7 @@ const Index = () => {
 
 		<Contact />
 
-		<footer className="footer">
-			<ul className="footer__list">
-				<li className="footer__item">
-					<a href="index.html" target="_self" className="footer__link">Home</a>
-				</li>
-				<li className="footer__item">
-					<a href="projects.html" target="_self" className="footer__link"
-						>Projects</a
-					>
-				</li>
-				<li className="footer__item">
-					<a href="blog.html" target="_self" className="footer__link">Blog</a>
-				</li>
-				<li className="footer__item">
-					<a href="#contact" target="_self" className="footer__link"
-						>Contact</a
-					>
-				</li>
-			</ul>
-			<ul className="footer__list">
-				<li className="footer__attribution">
-					SVG icons from
-					<a href="https://icomoon.io/" className="footer__link">IcoMoon</a>
-				</li>
-				<li className="footer__attribution">
-					Cover video from
-					<a href="https://coverr.co/" className="footer__link">Coverr</a>
-				</li>
-			</ul>
-			<div className="footer__copyright">
-				All rights reserved! Mudiaga Moody Uwojeya &copy; 2020
-			</div>
-		</footer>
+		<Footer />
 	</div>
     </Fragment>
 }

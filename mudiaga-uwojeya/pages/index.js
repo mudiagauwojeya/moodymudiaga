@@ -32,18 +32,18 @@ const Index = () => {
         </Head>
 
        <div className={styles.container}>
-		<Navigation />
-		
-		<Hero />
+			<Navigation />
+			
+			<Hero />
 
-		<Features />
+			<Features />
 
-		<Testimonial />
+			<Testimonial />
 
-		<Contact />
+			<Contact />
 
-		<Footer />
-	</div>
+			<Footer />
+		</div>
     </Fragment>
 }
 

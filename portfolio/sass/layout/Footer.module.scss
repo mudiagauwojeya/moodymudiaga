@@ -1,0 +1,92 @@
+@import "../abstract/mixins.scss";
+@import "../abstract/variables.sass";
+
+.footer {
+
+    background-color: $persian-plum;
+    clip-path: polygon(0 2%, 50% 6%, 100% 2%, 100% 100%, 0 100%);
+    color: $silver-chalice;
+    padding: 9rem 2.5rem 0;
+
+    @include breakpoint(28.125m) {
+        padding: 9rem 6rem 0;
+    } 
+    
+    @include breakpoint(37.5em) {
+        padding: 9rem 8rem 0;
+    }
+        
+    @include breakpoint(43.75em)  {  
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15rem 8rem 0;
+    }
+        
+    @include breakpoint(56.25em) {
+        padding: 15rem 12rem 0;
+    }
+    
+    &__list {
+        list-style-type: none;   
+        
+        @include breakpoint(43.75em) {
+            flex: 0 0 50%;
+        }
+    }
+        
+    &__item {
+        padding: 1.3rem 0;
+        
+        &:last-of-type {
+            margin-bottom: 3rem;
+        }
+    }
+        
+    &__link {
+
+        &:link {
+            color: $cultured;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            transition: transform 200ms ease-in;
+            will-change: transform;
+        }
+        
+        &:visited,
+        &:active {
+            color: $silver-chalice;
+        }
+        
+        &:hover {
+            transform: scale(1.2);
+            transition: transform 200ms ease-out;
+        }
+    }
+        
+    &__attribution {
+        padding: 1.3rem 0;
+        
+        &__attribution &__link {
+            font-weight: 700;
+        }         
+    }
+    
+    [class="footer__list"]:last-of-type {
+        border-top: 1px solid $silver-chalice;
+        
+        @include breakpoint(43.75em) {
+            border: none;
+        }
+    }
+    
+    &__copyright {
+        font-size: 1.35rem;
+        margin-top: 3rem;
+        text-align: center;
+        
+        @include breakpoint(43.75em) {
+            flex: 0 0 100%;
+        }
+    }
+}

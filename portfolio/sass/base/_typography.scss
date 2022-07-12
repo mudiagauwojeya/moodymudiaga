@@ -1,0 +1,28 @@
+@import "../abstract/variables"
+@import "../abstract/mixins"
+
+.heading 
+    color: $cultured
+    font-family: var(--heading)
+    font-weight: 700
+    line-height: 1.3
+    text-transform: uppercase
+
+
+.headingPrimary 
+    @extend .heading
+    font-size: 4.5rem
+
+    @include breakpoint(43.75em) 
+        font-size: 5.5rem
+    
+
+.headingSecondary 
+    @extend .heading
+    font-size: 2.3rem
+    padding-top: 1rem
+
+.headingTertiary 
+    @extend .heading
+    font-size: 1.8rem
+    text-transform: capitalize

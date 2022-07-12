@@ -1,0 +1,10 @@
+.gallery {
+	background-color: $persian-plum;
+	display: grid;
+	width: 60vw;
+	height: 40vh;
+
+	&__photo {
+		width: 100%;
+	}
+}

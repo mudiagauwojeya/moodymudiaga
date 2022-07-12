@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mudiaga Moody">
+    <meta name="description" content="My portfolio website">
+    <meta name="keywords" content="full stack developer, front end developer
+    back end developer, wewb developer, web development, web design, portfolio website,
+    website design, web designer, website developer, website, web apps, web application Mudiaga Moody Uwojeya Nigeria">
+    <title>Mudiaga Moody</title>
+
+    <!-- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;600&family=Petrona:wght@500;700&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- external stylesheet and favicon -->
+    <link rel="shortcut icon" href="assets/mudi-favicon-sm.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/sass/style.scss">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+
+</head>
+
+<body class="container">
+
+    <!-- navigation menu -->
+    <nav class="navigation">
+        <!-- brand -->
+        <div class="navigation__brand">
+            <a href="index.html" target="_self" class="navigation__home">
+                <img src="assets/logo.png" alt="mudi logo" class="navigation__logo">
+            </a>
+        </div>
+
+        <input type="checkbox" class="navigation__checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+        <div class="navigation__ball"></div>
+        <div class="navigation__menu">
+
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="index.html" target="_self" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="projects.html" target="_self" class="navigation__link">Projects</a></li>
+                <li class="navigation__item"><a href="blog.html" target="_self" class="navigation__link">Blog</a></li>
+                <li class="navigation__item"><a href="index.html#contact" target="_self" class="navigation__link">Contact</a></li>
+            </ul>
+
+
+            <div class="navigation__socials">
+                <span class="navigation__social-text">Find Me</span>
+                <div class="navigation__social-container">
+                    <a href="#contact" class="navigation__social-link">
+                        <svg class="navigation__social-brand">
+                            <use href="assets/sprite.svg#icon-mail_outline"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/uwojeyamudiaga/" target="_blank" class="navigation__social-link">
+                        <svg class="navigation__social-brand">
+                            <use href="assets/sprite.svg#icon-github1"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mudiaga-moody-uwojeya/" target="_blank"
+                        class="navigation__social-link">
+                        <svg class="navigation__social-brand">
+                            <use href="assets/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/MoodyMudiaga/" target="_blank" class="navigation__social-link">
+                        <svg class="navigation__social-brand">
+                            <use href="assets/sprite.svg#icon-twitter1"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="blog">
+        <div class="blog__container">
+            <div class="blog__description">
+                <h3 class="heading-secondary blog__heading">
+                    Coming soon...
+                </h3>
+                <svg class="blog__icon">
+                    <use href="assets/sprite.svg#icon-cone"></use>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item"><a href="index.html" target="_self" class="footer__link">Home</a></li>
+            <li class="footer__item"><a href="projects.html" target="_self" class="footer__link">Projects</a></li>
+            <li class="footer__item"><a href="blog.html" target="_self" class="footer__link">Blog</a></li>
+            <li class="footer__item"><a href="index.html#contact" target="_self" class="footer__link">Contact</a></li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__attribution">SVG icons from <a href="https://icomoon.io/"
+                    class="footer__link">IcoMoon</a></li>
+            <li class="footer__attribution">Cover video from <a href="https://coverr.co/"
+                    class="footer__link">Coverr</a></li>
+        </ul>
+        <div class="footer__copyright">
+            All rights reserved! Mudiaga Moody Uwojeya &copy; 2020
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import "../base/typography";
+
+.header {
+    
+    background-color: $burgundy;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
+    padding: 5rem 2.5rem 0;
+    position: relative;
+
+    @include breakpoint(28.125em) {
+        padding: 5rem 6rem 0;
+    }
+    
+    @include breakpoint(37.5em) {
+        padding: 5rem 8rem 0;
+    }
+    
+    @include breakpoint(43.75em) {
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
+        margin-top: 6.5rem;
+        padding: 0 8rem;
+    }
+
+    @include breakpoint(56.25em) {
+        padding: 0 12rem;
+    }
+
+    &__bgVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .15;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    &__video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    
+    &__content {
+        margin-top: 7rem;
+
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(37.5em) {
+            margin-top: 7rem;
+        }
+
+        @include breakpoint(43.75em) {
+            margin-top: 10rem;
+        }
+    }
+        
+
+    &__paragraph {
+        color: $white;
+        font-size: 1.8rem;
+        margin: 2rem 0 4rem;
+
+        @include breakpoint(28.125em) {
+            margin-bottom: 10rem;
+        }
+                    
+        @include breakpoint(43.75em) { 
+            font-size: 2rem;
+            letter-spacing: .1rem;
+            max-width: 100rem;
+        }
+    }
+        
+    &__chevron {
+        fill: $silver-chalice;
+        height: 9rem;
+        width: 9rem;
+
+        align-self: center;
+    }
+}
